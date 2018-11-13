@@ -1,4 +1,4 @@
-package thebeat.co.ExerciseG;
+package co.thebeat.ExerciseG;
 
 import java.util.Scanner;
 
