@@ -1,4 +1,4 @@
-package com.thebeat.co.ExerciseG;
+package thebeat.co.ExerciseG;
 
 public class DummyClass3 {
 
