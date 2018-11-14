@@ -1,9 +1,9 @@
-package ExerciseH;
+package co.thebeat.ExerciseH;
 
-//1. Test the following method writing unit tests:
 
 public class DummyClass1 {
 
+    //1. Test the following method writing unit tests:
     public int checkHowManyNumbersAreEqual(int x, int y, int z) {
         if (x == y && x == z) {
             return 3;

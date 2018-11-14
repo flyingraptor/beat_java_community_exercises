@@ -1,4 +1,4 @@
-package ExerciseH;
+package co.thebeat.ExerciseH;
 
 import org.junit.jupiter.api.Test;
 
@@ -8,7 +8,7 @@ class DummyClass1Test {
 
 
     @Test
-    public void checkHowManyNumbersAreEqualZeroEquals()      {
+    void checkHowManyNumbersAreEqualZeroEquals()      {
 
         DummyClass1 obj = new DummyClass1();
         int num = obj.checkHowManyNumbersAreEqual(2,4,8);
@@ -17,7 +17,7 @@ class DummyClass1Test {
     }
 
     @Test
-    public void checkHowManyNumbersAreEqualTwoEquals()      {
+    void checkHowManyNumbersAreEqualTwoEquals()      {
 
         DummyClass1 obj = new DummyClass1();
         int num = obj.checkHowManyNumbersAreEqual(4,4,8);
@@ -26,7 +26,7 @@ class DummyClass1Test {
     }
 
     @Test
-    public void checkHowManyNumbersAreEqualThreeEquals()      {
+    void checkHowManyNumbersAreEqualThreeEquals()      {
 
         DummyClass1 obj = new DummyClass1();
         int num = obj.checkHowManyNumbersAreEqual(3,3,3);
@@ -35,7 +35,7 @@ class DummyClass1Test {
     }
 
     @Test
-    public void checkHowManyNumbersAreEqualZeroThreeEquals()      {
+    void checkHowManyNumbersAreEqualZeroThreeEquals()      {
 
         DummyClass1 obj = new DummyClass1();
         int num = obj.checkHowManyNumbersAreEqual(0,0,0);
@@ -44,7 +44,7 @@ class DummyClass1Test {
     }
 
     @Test
-    public void checkHowManyNumbersAreEqualNegativeTwoEquals()      {
+    void checkHowManyNumbersAreEqualNegativeTwoEquals()      {
 
         DummyClass1 obj = new DummyClass1();
         int num = obj.checkHowManyNumbersAreEqual(-3,3,3);
@@ -53,7 +53,7 @@ class DummyClass1Test {
     }
 
     @Test
-    public void countEvenNumbersFiveEvenNumbers() {
+    void countEvenNumbersFiveEvenNumbers() {
 
         int[] numberList = {0,2,4,8,10};
         DummyClass1 obj = new DummyClass1();
@@ -63,7 +63,7 @@ class DummyClass1Test {
     }
 
     @Test
-    public void countEvenNumbersZeroEvenNumbers() {
+    void countEvenNumbersZeroEvenNumbers() {
 
         int[] numberList = {5,13,67,91,1};
         DummyClass1 obj = new DummyClass1();
@@ -73,7 +73,7 @@ class DummyClass1Test {
     }
 
     @Test
-    public void countEvenNumbersThreeEvenNumbers() {
+    void countEvenNumbersThreeEvenNumbers() {
 
         int[] numberList = {9,2,5,8,10};
         DummyClass1 obj = new DummyClass1();
@@ -83,7 +83,7 @@ class DummyClass1Test {
     }
 
     @Test
-    public void countEvenNumbersTwoEvenOneNegativeNumbers() {
+    void countEvenNumbersTwoEvenOneNegativeNumbers() {
 
         int[] numberList = {9,-2,5,8,11};
         DummyClass1 obj = new DummyClass1();
@@ -93,7 +93,7 @@ class DummyClass1Test {
     }
 
     @Test
-    public void countEvenNumbersZeroEvenAllOddNegativeNumbers() {
+    void countEvenNumbersZeroEvenAllOddNegativeNumbers() {
 
         int[] numberList = {-3,-7,-5,-9,-11};
         DummyClass1 obj = new DummyClass1();
@@ -103,7 +103,7 @@ class DummyClass1Test {
     }
 
     @Test
-    public void countEvenNumbersFiveEvenAllNegativeNumbers() {
+    void countEvenNumbersFiveEvenAllNegativeNumbers() {
 
         int[] numberList = {-2,-8,-8,-10,-12};
         DummyClass1 obj = new DummyClass1();
@@ -113,7 +113,7 @@ class DummyClass1Test {
     }
 
     @Test
-    public void countEvenNumbersFiveEvenAllZeroNumbers() {
+    void countEvenNumbersFiveEvenAllZeroNumbers() {
 
         int[] numberList = {0,0,0,0,0};
         DummyClass1 obj = new DummyClass1();
@@ -121,6 +121,5 @@ class DummyClass1Test {
         assertEquals(5, num);
 
     }
-
 
 }
