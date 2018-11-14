@@ -14,7 +14,6 @@ class DummyClass1Test {
         int numOfEquals = dc1.checkHowManyNumbersAreEqual(2, 2, 2);
 
         assertEquals(3, numOfEquals);
-        System.out.println("All the given numbers are equal");
     }
 
     @Test
@@ -22,10 +21,17 @@ class DummyClass1Test {
 
         DummyClass1 dc1 = new DummyClass1();
 
-        int numOfEquals = dc1.checkHowManyNumbersAreEqual(3,3,5);
+        int numOfEquals = dc1.checkHowManyNumbersAreEqual(3, 3, 5);
         assertEquals(1, numOfEquals);
+    }
 
-        System.out.println("Two of the numbers are equal");
+    @Test
+    void checkIfTwoNegativeNumbersAreEquals() {
+
+        DummyClass1 dc1 = new DummyClass1();
+
+        int numOfEquals = dc1.checkHowManyNumbersAreEqual(-5, -10, 10);
+        assertEquals(1, numOfEquals);
     }
 
     @Test
@@ -33,25 +39,31 @@ class DummyClass1Test {
 
         DummyClass1 dc1 = new DummyClass1();
 
-        int numOfEquals = dc1.checkHowManyNumbersAreEqual(10,55,22);
+        int numOfEquals = dc1.checkHowManyNumbersAreEqual(10, 55, 22);
         assertEquals(0, numOfEquals);
-
-        System.out.println("All numbers are different");
     }
 
 
     @Test
-    void countEvenNumbers() {
+    void checkCountEvenNumbersCounter() {
 
         DummyClass1 dc1 = new DummyClass1();
-        int[] array_nums={12,25,35};
+        int[] array_nums = {12, 25, 35};
         int countEvenNo = dc1.countEvenNumbers(array_nums);
-        assertTrue(countEvenNo==1);
-
-        System.out.println("The array contains " + countEvenNo +" even Numbers");
-
+        assertTrue(countEvenNo == 1);
 
     }
+
+    @Test
+    void checkCountEvenNumersCounterNegativeNumbers() {
+
+        DummyClass1 dc1 = new DummyClass1();
+        int[] array_nums = {-122, -44, -55};
+        int countEvenNo = dc1.countEvenNumbers(array_nums);
+        assertTrue(countEvenNo == 2);
+
+    }
+
 
 
 }
