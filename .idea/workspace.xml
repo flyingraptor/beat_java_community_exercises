@@ -300,7 +300,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542218859316" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542219119252" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -360,6 +360,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DummyClass1Test.checkIfTwoNumbersAreEquals" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaExercises" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="co.thebeat.ExerciseH.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="co.thebeat.ExerciseH" />
+      <option name="MAIN_CLASS_NAME" value="co.thebeat.ExerciseH.DummyClass1Test" />
+      <option name="METHOD_NAME" value="checkIfTwoNumbersAreEquals" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DummyClass1Test.countEvenNumbers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaExercises" />
       <extension name="coverage">
@@ -372,20 +388,6 @@
       <option name="MAIN_CLASS_NAME" value="co.thebeat.ExerciseH.DummyClass1Test" />
       <option name="METHOD_NAME" value="countEvenNumbers" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DummyClass4Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javaExercises" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.thebeat.co.ExerciseG.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.thebeat.co.ExerciseG" />
-      <option name="MAIN_CLASS_NAME" value="com.thebeat.co.ExerciseG.DummyClass4Test" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -405,19 +407,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.DummyClass4Test" />
       <item itemvalue="JUnit.com.thebeat.co.ExerciseG in javaExercises" />
       <item itemvalue="JUnit.DummyClass1Test.checkHowManyNumbersAreEqual" />
       <item itemvalue="JUnit.DummyClass1Test.countEvenNumbers" />
       <item itemvalue="JUnit.DummyClass1Test" />
+      <item itemvalue="JUnit.DummyClass1Test.checkIfTwoNumbersAreEquals" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.DummyClass1Test" />
+        <item itemvalue="JUnit.DummyClass1Test.checkIfTwoNumbersAreEquals" />
         <item itemvalue="JUnit.DummyClass1Test.countEvenNumbers" />
         <item itemvalue="JUnit.DummyClass1Test.checkHowManyNumbersAreEqual" />
         <item itemvalue="JUnit.com.thebeat.co.ExerciseG in javaExercises" />
-        <item itemvalue="JUnit.DummyClass4Test" />
       </list>
     </recent_temporary>
   </component>

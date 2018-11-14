@@ -48,7 +48,7 @@ class DummyClass1Test {
         int countEvenNo = dc1.countEvenNumbers(array_nums);
         assertTrue(countEvenNo==1);
 
-        System.out.println("The array contains " + countEvenNo +"even Numbers");
+        System.out.println("The array contains " + countEvenNo +" even Numbers");
 
 
     }
