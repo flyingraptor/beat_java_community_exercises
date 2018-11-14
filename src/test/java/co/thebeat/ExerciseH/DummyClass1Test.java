@@ -10,8 +10,8 @@ class DummyClass1Test {
     void checkHowManyNumbersAreEqualResult1() {
 
         DummyClass1 dc1 = new DummyClass1();
-        int areEqual = dc1.checkHowManyNumbersAreEqual(3,3,4);
-        assertEquals(areEqual,1);
+        int equals = dc1.checkHowManyNumbersAreEqual(3,3,4);
+        assertEquals(1,equals);
 
     }
 
@@ -19,8 +19,8 @@ class DummyClass1Test {
     void checkHowManyNumbersAreEqualResult3() {
 
         DummyClass1 dc1 = new DummyClass1();
-        int areEqual = dc1.checkHowManyNumbersAreEqual(3,3,3);
-        assertEquals(areEqual,3);
+        int equals = dc1.checkHowManyNumbersAreEqual(3,3,3);
+        assertEquals(3,equals);
 
     }
 
@@ -28,16 +28,16 @@ class DummyClass1Test {
     void checkHowManyNumbersAreEqualResultNone() {
 
         DummyClass1 dc1 = new DummyClass1();
-        int areEqual = dc1.checkHowManyNumbersAreEqual(3,4,5);
-        assertEquals(areEqual,0);
+        int equals = dc1.checkHowManyNumbersAreEqual(3,4,5);
+        assertEquals(0,equals);
 
     }
     @Test
     void checkHowManyNumbersAreEqualWithNegativeNumber() {
 
         DummyClass1 dc1 = new DummyClass1();
-        int areEqual = dc1.checkHowManyNumbersAreEqual(3,-3,5);
-        assertEquals(areEqual,0);
+        int equals = dc1.checkHowManyNumbersAreEqual(3,-3,5);
+        assertEquals(equals,0);
 
     }
 
@@ -48,7 +48,7 @@ class DummyClass1Test {
 
         DummyClass1 dc1 = new DummyClass1();
         int evens = dc1.countEvenNumbers(array_nums);
-        assertEquals(evens,3);
+        assertEquals(3, evens);
     }
 
     @Test
@@ -58,7 +58,7 @@ class DummyClass1Test {
 
         DummyClass1 dc1 = new DummyClass1();
         int evens = dc1.countEvenNumbers(array_nums);
-        assertEquals(evens,0);
+        assertEquals(0,evens);
     }
 
     @Test
@@ -68,7 +68,7 @@ class DummyClass1Test {
 
         DummyClass1 dc1 = new DummyClass1();
         int evens = dc1.countEvenNumbers(array_nums);
-        assertEquals(evens,5);
+        assertEquals(5,evens);
     }
 
     @Test
@@ -78,6 +78,6 @@ class DummyClass1Test {
 
         DummyClass1 dc1 = new DummyClass1();
         int evens = dc1.countEvenNumbers(array_nums);
-        assertEquals(evens,5);
+        assertEquals(5,evens);
     }
 }
