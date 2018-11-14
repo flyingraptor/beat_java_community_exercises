@@ -37,7 +37,7 @@ class DummyClass1Test {
 
         DummyClass1 dc1 = new DummyClass1();
         int equals = dc1.checkHowManyNumbersAreEqual(3,-3,5);
-        assertEquals(equals,0);
+        assertEquals(0,equals);
 
     }
 
