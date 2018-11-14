@@ -11,9 +11,9 @@ class DummyClass1Test {
 
         DummyClass1 dc1 = new DummyClass1();
 
-        dc1.checkHowManyNumbersAreEqual(2, 2, 2);
+        int numOfEquals = dc1.checkHowManyNumbersAreEqual(2, 2, 2);
 
-        assertEquals(3, 3);
+        assertEquals(3, numOfEquals);
         System.out.println("All the given numbers are equal");
     }
 
@@ -22,8 +22,8 @@ class DummyClass1Test {
 
         DummyClass1 dc1 = new DummyClass1();
 
-        dc1.checkHowManyNumbersAreEqual(3,3,5);
-        assertEquals(1,1);
+        int numOfEquals = dc1.checkHowManyNumbersAreEqual(3,3,5);
+        assertEquals(1, numOfEquals);
 
         System.out.println("Two of the numbers are equal");
     }
@@ -33,8 +33,8 @@ class DummyClass1Test {
 
         DummyClass1 dc1 = new DummyClass1();
 
-        dc1.checkHowManyNumbersAreEqual(10,55,22);
-        assertEquals(0,0);
+        int numOfEquals = dc1.checkHowManyNumbersAreEqual(10,55,22);
+        assertEquals(0, numOfEquals);
 
         System.out.println("All numbers are different");
     }
