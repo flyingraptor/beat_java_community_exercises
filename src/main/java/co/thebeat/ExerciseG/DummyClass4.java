@@ -19,8 +19,7 @@ public class DummyClass4 {
         }
     }
 
-    public boolean checkIfArrayContains(Integer[] array,
-                                        Integer elementToCheck) {
+    public boolean checkIfArrayContains(Integer[] array,Integer elementToCheck) {
 
         boolean contained = false;
 
