@@ -22,7 +22,7 @@ public class DummyClass1Test {
 
         DummyClass1 dc1 = new DummyClass1();
         String[] splitted = dc1.splitString("Electra",2);
-        String[] actual = {"ELectra"};
+        String[] actual = {"Electra"};
         assertArrayEquals(splitted,actual);
 =======
 class DummyClass1Test {
