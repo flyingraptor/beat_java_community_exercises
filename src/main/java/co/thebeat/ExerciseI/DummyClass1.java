@@ -9,6 +9,12 @@ public class DummyClass1 {
 
         String[] splittedParts = null;
 
+        if(numOfPartsToSplit <=0 ) {
+            splittedParts = new String[1];
+            splittedParts[0] = text;
+            return splittedParts;
+        }
+
         if (textSize % numOfPartsToSplit != 0) {
             splittedParts = new String[1];
             splittedParts[0] = text;

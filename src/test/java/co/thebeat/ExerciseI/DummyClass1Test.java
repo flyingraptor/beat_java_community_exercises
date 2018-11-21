@@ -105,4 +105,22 @@ public class DummyClass1Test {
         assertArrayEquals(splitted,actual);
 
     }
+
+    @Test
+    void testSplitStringBlankChar() {
+
+        DummyClass1 dc1 = new DummyClass1();
+        String[] splitted = dc1.splitString("ab c",2);
+        String[] actual = {"ab", " c"};
+        assertArrayEquals(splitted,actual);
+    }
+
+    @Test
+    void testSplitStringNegativeParts() {
+
+        DummyClass1 dc1 = new DummyClass1();
+        String[] splitted = dc1.splitString("abcd",-2);
+        String[] actual = {"abcd"};
+        assertArrayEquals(splitted,actual);
+    }
 }
