@@ -6,78 +6,120 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class DummyClass1Test {
 
-    @Test
-    void checkHowManyNumbersAreEqualResult1() {
 
-        DummyClass1 dc1 = new DummyClass1();
-        int equals = dc1.checkHowManyNumbersAreEqual(3,3,4);
-        assertEquals(1,equals);
+    @Test
+    void checkHowManyNumbersAreEqualZeroEquals()      {
+
+        DummyClass1 obj = new DummyClass1();
+        int num = obj.checkHowManyNumbersAreEqual(2,4,8);
+        assertEquals(0,num);
 
     }
 
     @Test
-    void checkHowManyNumbersAreEqualResult3() {
+    void checkHowManyNumbersAreEqualTwoEquals()      {
 
-        DummyClass1 dc1 = new DummyClass1();
-        int equals = dc1.checkHowManyNumbersAreEqual(3,3,3);
-        assertEquals(3,equals);
-
-    }
-
-    @Test
-    void checkHowManyNumbersAreEqualResultNone() {
-
-        DummyClass1 dc1 = new DummyClass1();
-        int equals = dc1.checkHowManyNumbersAreEqual(3,4,5);
-        assertEquals(0,equals);
-
-    }
-    @Test
-    void checkHowManyNumbersAreEqualWithNegativeNumber() {
-
-        DummyClass1 dc1 = new DummyClass1();
-        int equals = dc1.checkHowManyNumbersAreEqual(3,-3,5);
-        assertEquals(0,equals);
+        DummyClass1 obj = new DummyClass1();
+        int num = obj.checkHowManyNumbersAreEqual(4,4,8);
+        assertEquals(1,num);
 
     }
 
     @Test
-    void countEvenNumbers() {
+    void checkHowManyNumbersAreEqualThreeEquals()      {
 
-        int[] array_nums = {2,4,7,8,9};
+        DummyClass1 obj = new DummyClass1();
+        int num = obj.checkHowManyNumbersAreEqual(3,3,3);
+        assertEquals(3,num);
 
-        DummyClass1 dc1 = new DummyClass1();
-        int evens = dc1.countEvenNumbers(array_nums);
-        assertEquals(3, evens);
     }
 
     @Test
-    void countEvenNumbersNone() {
+    void checkHowManyNumbersAreEqualZeroThreeEquals()      {
 
-        int[] array_nums = {1,3,7,9};
+        DummyClass1 obj = new DummyClass1();
+        int num = obj.checkHowManyNumbersAreEqual(0,0,0);
+        assertEquals(3, num);
 
-        DummyClass1 dc1 = new DummyClass1();
-        int evens = dc1.countEvenNumbers(array_nums);
-        assertEquals(0,evens);
     }
 
     @Test
-    void countEvenNumbersAll() {
+    void checkHowManyNumbersAreEqualNegativeTwoEquals()      {
 
-        int[] array_nums = {2,4,6,8,10};
+        DummyClass1 obj = new DummyClass1();
+        int num = obj.checkHowManyNumbersAreEqual(-3,3,3);
+        assertEquals(1, num);
 
-        DummyClass1 dc1 = new DummyClass1();
-        int evens = dc1.countEvenNumbers(array_nums);
-        assertEquals(5,evens);
     }
 
     @Test
-    void countEvenNumbersNegative() {
+    void countEvenNumbersFiveEvenNumbers() {
 
-        int[] array_nums = {-2,-4,-6,8,10};
+        int[] numberList = {0,2,4,8,10};
+        DummyClass1 obj = new DummyClass1();
+        int num = obj.countEvenNumbers(numberList);
+        assertEquals(5, num);
 
-        DummyClass1 dc1 = new DummyClass1();
-        int evens = dc1.countEvenNumbers(array_nums);
-        assertEquals(5,evens);
     }
+
+    @Test
+    void countEvenNumbersZeroEvenNumbers() {
+
+        int[] numberList = {5,13,67,91,1};
+        DummyClass1 obj = new DummyClass1();
+        int num = obj.countEvenNumbers(numberList);
+        assertEquals(0, num);
+
+    }
+
+    @Test
+    void countEvenNumbersThreeEvenNumbers() {
+
+        int[] numberList = {9,2,5,8,10};
+        DummyClass1 obj = new DummyClass1();
+        int num = obj.countEvenNumbers(numberList);
+        assertEquals(3, num);
+
+    }
+
+    @Test
+    void countEvenNumbersTwoEvenOneNegativeNumbers() {
+
+        int[] numberList = {9,-2,5,8,11};
+        DummyClass1 obj = new DummyClass1();
+        int num = obj.countEvenNumbers(numberList);
+        assertEquals(2, num);
+
+    }
+
+    @Test
+    void countEvenNumbersZeroEvenAllOddNegativeNumbers() {
+
+        int[] numberList = {-3,-7,-5,-9,-11};
+        DummyClass1 obj = new DummyClass1();
+        int num = obj.countEvenNumbers(numberList);
+        assertEquals(0, num);
+
+    }
+
+    @Test
+    void countEvenNumbersFiveEvenAllNegativeNumbers() {
+
+        int[] numberList = {-2,-8,-8,-10,-12};
+        DummyClass1 obj = new DummyClass1();
+        int num = obj.countEvenNumbers(numberList);
+        assertEquals(5, num);
+
+    }
+
+    @Test
+    void countEvenNumbersFiveEvenAllZeroNumbers() {
+
+        int[] numberList = {0,0,0,0,0};
+        DummyClass1 obj = new DummyClass1();
+        int num = obj.countEvenNumbers(numberList);
+        assertEquals(5, num);
+
+    }
+
 }
