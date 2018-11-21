@@ -20,21 +20,9 @@ public class DummyClass1Test {
     void testSplitStringSevenCharText() {
 
         DummyClass1 dc1 = new DummyClass1();
-        String[] splitted = dc1.splitString("Electra", 2);
-        String[] actual = {"Electra"};
-        assertArrayEquals(splitted, actual);
-    }
-
-    @Test
-    void testSplitStringAt2Parts() {
-
-        DummyClass1 dc1 = new DummyClass1();
-        String[] expectedParts = {"abcd", "efgh"};
-
-        String[] actualParts = dc1.splitString("abcdefgh", 2);
-
-        assertArrayEquals(expectedParts, actualParts);
-
+        String[] splitted = dc1.splitString("Electra",2);
+        String[] actual = {"ELectra"};
+        assertArrayEquals(splitted,actual);
 
     }
 
@@ -42,9 +30,9 @@ public class DummyClass1Test {
     void testSplitStringOneCharText() {
 
         DummyClass1 dc1 = new DummyClass1();
-        String[] splitted = dc1.splitString("a", 2);
+        String[] splitted = dc1.splitString("a",2);
         String[] actual = {"a"};
-        assertArrayEquals(splitted, actual);
+        assertArrayEquals(splitted,actual);
 
     }
 
@@ -52,18 +40,19 @@ public class DummyClass1Test {
     void testSplitStringTwoCharText() {
 
         DummyClass1 dc1 = new DummyClass1();
-        String[] splitted = dc1.splitString("ab", 2);
-        String[] actual = {"a", "b"};
-        assertArrayEquals(splitted, actual);
+        String[] splitted = dc1.splitString("ab",2);
+        String[] actual = {"a","b"};
+        assertArrayEquals(splitted,actual);
+
     }
 
     @Test
     void testSplitStringSixCharTextThreeParts() {
 
         DummyClass1 dc1 = new DummyClass1();
-        String[] splitted = dc1.splitString("Petros", 3);
-        String[] actual = {"Pe", "tr", "os"};
-        assertArrayEquals(splitted, actual);
+        String[] splitted = dc1.splitString("Petros",3);
+        String[] actual = {"Pe","tr","os"};
+        assertArrayEquals(splitted,actual);
 
     }
 
@@ -71,9 +60,9 @@ public class DummyClass1Test {
     void testSplitStringSixCharTextOnePart() {
 
         DummyClass1 dc1 = new DummyClass1();
-        String[] splitted = dc1.splitString("Petros", 1);
+        String[] splitted = dc1.splitString("Petros",1);
         String[] actual = {"Petros"};
-        assertArrayEquals(splitted, actual);
+        assertArrayEquals(splitted,actual);
 
     }
 
@@ -81,9 +70,9 @@ public class DummyClass1Test {
     void testSplitStringSixCharTextSixParts() {
 
         DummyClass1 dc1 = new DummyClass1();
-        String[] splitted = dc1.splitString("Petros", 6);
-        String[] actual = {"P", "e", "t", "r", "o", "s"};
-        assertArrayEquals(splitted, actual);
+        String[] splitted = dc1.splitString("Petros",6);
+        String[] actual = {"P","e","t","r","o","s"};
+        assertArrayEquals(splitted,actual);
 
     }
 
@@ -91,9 +80,9 @@ public class DummyClass1Test {
     void testSplitStringTwoCharTextThreeParts() {
 
         DummyClass1 dc1 = new DummyClass1();
-        String[] splitted = dc1.splitString("ab", 3);
+        String[] splitted = dc1.splitString("ab",3);
         String[] actual = {"ab"};
-        assertArrayEquals(splitted, actual);
+        assertArrayEquals(splitted,actual);
 
     }
 
@@ -101,9 +90,9 @@ public class DummyClass1Test {
     void testSplitStringTwoCharZeroParts() {
 
         DummyClass1 dc1 = new DummyClass1();
-        String[] splitted = dc1.splitString("ab", 0);
+        String[] splitted = dc1.splitString("ab",0);
         String[] actual = {"ab"};
-        assertArrayEquals(splitted, actual);
+        assertArrayEquals(splitted,actual);
 
     }
 
@@ -111,9 +100,9 @@ public class DummyClass1Test {
     void testSplitStringThreeCharSixParts() {
 
         DummyClass1 dc1 = new DummyClass1();
-        String[] splitted = dc1.splitString("abc", 6);
+        String[] splitted = dc1.splitString("abc",6);
         String[] actual = {"abc"};
-        assertArrayEquals(splitted, actual);
+        assertArrayEquals(splitted,actual);
 
     }
 
@@ -121,76 +110,17 @@ public class DummyClass1Test {
     void testSplitStringBlankChar() {
 
         DummyClass1 dc1 = new DummyClass1();
-        String[] splitted = dc1.splitString("ab c", 2);
+        String[] splitted = dc1.splitString("ab c",2);
         String[] actual = {"ab", " c"};
-        assertArrayEquals(splitted, actual);
+        assertArrayEquals(splitted,actual);
     }
 
     @Test
     void testSplitStringNegativeParts() {
 
         DummyClass1 dc1 = new DummyClass1();
-        String[] splitted = dc1.splitString("abcd", -2);
+        String[] splitted = dc1.splitString("abcd",-2);
         String[] actual = {"abcd"};
-        assertArrayEquals(splitted, actual);
+        assertArrayEquals(splitted,actual);
     }
-
-    void testSplitStringAt0Parts () {
-
-        DummyClass1 dc1 = new DummyClass1();
-        String[] expectedParts = {"abcd"};
-
-        String[] actualParts = dc1.splitString("abcd", 0);
-
-        assertArrayEquals(expectedParts, actualParts);
-    }
-
-    @Test
-    void testSplitStringNotEvenNumberOfLetters () {
-
-        DummyClass1 dc1 = new DummyClass1();
-
-        String[] expectedParts = {"abcde"};
-
-        String[] actualParts = dc1.splitString("abcde", 2);
-
-        assertArrayEquals(expectedParts, actualParts);
-    }
-
-    @Test
-    void testSplitStringNotEvenNumberOfLettersAndZeroParts () {
-
-        DummyClass1 dc1 = new DummyClass1();
-
-        String[] expectedParts = {"abcde"};
-
-        String[] actualParts = dc1.splitString("abcde", 0);
-
-        assertArrayEquals(expectedParts, actualParts);
-    }
-
-    @Test
-    void testSplitStringNegativeNumOfParts () {
-
-        DummyClass1 dc1 = new DummyClass1();
-
-        String[] expectedParts = {"abcd"};
-
-        String[] actualParts = dc1.splitString("abcd", -2);
-
-        assertArrayEquals(expectedParts, actualParts);
-    }
-
-    @Test
-    void testSplitStringWithTextUnableToSplitInSoManyParts () {
-
-        DummyClass1 dc1 = new DummyClass1();
-
-        String[] expectedParts = {"ab"};
-
-        String[] actualParts = dc1.splitString("ab", 4);
-
-        assertArrayEquals(expectedParts, actualParts);
-    }
-
 }
