@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7902fa1f-85ad-47d2-ba5c-8d7224713840" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/thebeat/ExerciseI/DummyClass1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/thebeat/ExerciseI/DummyClass1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseI/DummyClass1Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseI/DummyClass1Test.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -16,20 +15,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/co/thebeat/ExerciseI/DummyClass1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-135">
+            <state relative-caret-position="-216">
               <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseI/DummyClass1Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="708">
-              <caret line="122" column="36" selection-start-line="122" selection-start-column="36" selection-end-line="122" selection-end-column="36" />
+            <state relative-caret-position="240">
+              <caret line="31" column="44" lean-forward="true" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -76,8 +75,8 @@
         <option value="$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseH/DummyClass1Test.java" />
         <option value="$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseI/DummyClass1.java" />
         <option value="$PROJECT_DIR$/src/main/java/co/thebeat/ExerciseG/DummyClass4.java" />
-        <option value="$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseI/DummyClass1Test.java" />
         <option value="$PROJECT_DIR$/src/main/java/co/thebeat/ExerciseI/DummyClass1.java" />
+        <option value="$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseI/DummyClass1Test.java" />
       </list>
     </option>
   </component>
@@ -174,10 +173,6 @@
               <item name="thebeat" type="462c0819:PsiDirectoryNode" />
               <item name="ExerciseI" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="beat_java_community_exercises" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -186,7 +181,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542820132141" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542820406303" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -216,7 +211,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.DummyClass1Test.testSplitStringNegativeParts">
+  <component name="RunManager" selected="JUnit.DummyClass1Test.testSplitStringSevenCharText">
     <configuration name="DummyClass1Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="beat_java_community_exercises" />
       <extension name="coverage">
@@ -264,7 +259,7 @@
       </method>
     </configuration>
     <configuration name="DummyClass1Test.testSplitStringSevenCharText" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javaExercises" />
+      <module name="beat_java_community_exercises" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="co.thebeat.ExerciseI.*" />
@@ -275,6 +270,7 @@
       <option name="MAIN_CLASS_NAME" value="co.thebeat.ExerciseI.DummyClass1Test" />
       <option name="METHOD_NAME" value="testSplitStringSevenCharText" />
       <option name="TEST_OBJECT" value="method" />
+      <option name="PARAMETERS" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -305,11 +301,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DummyClass1Test.testSplitStringSevenCharText" />
         <item itemvalue="JUnit.DummyClass1Test.testSplitStringNegativeParts" />
         <item itemvalue="JUnit.DummyClass1Test" />
         <item itemvalue="JUnit.DummyClass1Test.testSplitStringBlankChar" />
         <item itemvalue="JUnit.DummyClass1Test.testSplitStringSixCharTextOnePart" />
-        <item itemvalue="JUnit.DummyClass1Test.testSplitStringSevenCharText" />
       </list>
     </recent_temporary>
   </component>
@@ -359,22 +355,17 @@
       <option name="project" value="LOCAL" />
       <updated>1542818781799</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Code refactor to DummyClass1, negative parts text fixed">
+      <created>1542820191245</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1542820191245</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DummyClass1Test_testSplitStringSixCharTextOnePart - 2018.11.21 at 11h 08m 48s.xml">
-      <configuration name="DummyClass1Test.testSplitStringSixCharTextOnePart" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DummyClass1Test_testSplitStringTwoCharZeroParts - 2018.11.21 at 11h 09m 25s.xml">
-      <configuration name="DummyClass1Test.testSplitStringTwoCharZeroParts" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DummyClass1Test_testSplitStringThreeCharSixParts - 2018.11.21 at 11h 11m 47s.xml">
-      <configuration name="DummyClass1Test.testSplitStringThreeCharSixParts" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DummyClass1Test_testSplitStringSevenCharText - 2018.11.21 at 11h 37m 44s.xml">
-      <configuration name="DummyClass1Test.testSplitStringSevenCharText" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="DummyClass1Test - 2018.11.21 at 18h 41m 41s.xml">
       <configuration name="DummyClass1Test" configurationId="JUnit" />
     </history-entry>
@@ -393,6 +384,18 @@
     <history-entry file="DummyClass1Test_testSplitStringNegativeParts - 2018.11.21 at 18h 57m 13s.xml">
       <configuration name="DummyClass1Test.testSplitStringNegativeParts" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="DummyClass1Test - 2018.11.21 at 19h 07m 10s.xml">
+      <configuration name="DummyClass1Test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DummyClass1Test_testSplitStringNegativeParts - 2018.11.21 at 19h 08m 16s.xml">
+      <configuration name="DummyClass1Test.testSplitStringNegativeParts" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DummyClass1Test_testSplitStringSevenCharText - 2018.11.21 at 19h 12m 48s.xml">
+      <configuration name="DummyClass1Test.testSplitStringSevenCharText" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DummyClass1Test_testSplitStringSevenCharText - 2018.11.21 at 19h 13m 31s.xml">
+      <configuration name="DummyClass1Test.testSplitStringSevenCharText" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="834" extended-state="6" />
@@ -407,10 +410,10 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.38948786" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49928468" visible="true" weight="0.38948786" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39892185" />
       <window_info anchor="bottom" id="Terminal" order="4" sideWeight="0.49928468" weight="0.32884097" />
-      <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.5007153" side_tool="true" weight="0.32884097" />
+      <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.5007153" side_tool="true" visible="true" weight="0.38948786" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Find" order="7" weight="0.32833958" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
@@ -462,7 +465,8 @@
     <MESSAGE value="ExerciseH" />
     <MESSAGE value="ExerciseH - fixes" />
     <MESSAGE value="ExerciseI solution" />
-    <option name="LAST_COMMIT_MESSAGE" value="ExerciseI solution" />
+    <MESSAGE value="Code refactor to DummyClass1, negative parts text fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Code refactor to DummyClass1, negative parts text fixed" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/thebeat/co/App.java" />
@@ -562,20 +566,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseI/DummyClass1Test.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/co/thebeat/ExerciseI/DummyClass1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="708">
-          <caret line="122" column="36" selection-start-line="122" selection-start-column="36" selection-end-line="122" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-216">
+          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/co/thebeat/ExerciseI/DummyClass1.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseI/DummyClass1Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-135">
-          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+        <state relative-caret-position="240">
+          <caret line="31" column="44" lean-forward="true" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
