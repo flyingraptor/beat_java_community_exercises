@@ -46,7 +46,7 @@ class DummyClass1Test {
 
         String[] parts =  obj.splitString("Gal", 2);
 
-        assertEquals(32, parts.length);
+        assertEquals(2, parts.length);
 
     }
 
@@ -60,4 +60,51 @@ class DummyClass1Test {
         assertEquals(3, parts.length);
 
     }
+
+
+    @Test
+    void testSplitStringFullSentenceTwoParts() {
+
+        DummyClass1 obj = new DummyClass1();
+
+        String[] parts =  obj.splitString("Hello wonderful people.", 2);
+
+        assertEquals(2, parts.length);
+
+    }
+
+    @Test
+    void testSplitStringFullSentenceThreeParts() {
+
+        DummyClass1 obj = new DummyClass1();
+
+        String[] parts =  obj.splitString("Hello wonderful people.", 3);
+
+        assertEquals(3, parts.length);
+
+    }
+
+    @Test
+    void testSplitStringOnlySpacesTwoParts() {
+
+        DummyClass1 obj = new DummyClass1();
+
+        String[] parts =  obj.splitString("                ", 2);
+
+        assertEquals(2, parts.length);
+
+    }
+
+    @Test
+    void testSplitStringOnlySpacesThreeParts() {
+
+        DummyClass1 obj = new DummyClass1();
+
+        String[] parts =  obj.splitString("                ", 3);
+
+        assertEquals(3, parts.length);
+
+    }
+
+
 }
