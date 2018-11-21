@@ -70,7 +70,7 @@ class DummyClass1Test {
 
         DummyClass1 dc1 = new DummyClass1();
 
-        String[] expectedParts = {"abcde"};
+        String[] expectedParts = {"abcd"};
 
         String[] actualParts = dc1.splitString("abcd", -2);
 
