@@ -7,104 +7,86 @@ import static org.junit.jupiter.api.Assertions.*;
 class DummyClass1Test {
 
     @Test
-    void testSplitStringGalateaThreeParts() {
+    void testSplitStringAt2Parts() {
 
-        DummyClass1 obj = new DummyClass1();
+        DummyClass1 dc1 = new DummyClass1();
+        String[] expectedParts = {"abcd","efgh"};
 
-     String[] parts =  obj.splitString("Galatea", 3);
+        String[] actualParts = dc1.splitString("abcdefgh", 2);
 
-     assertEquals(3, parts.length);
-
-    }
-
-    @Test
-    void testSplitStringNullStringOnePart() {
-
-        DummyClass1 obj = new DummyClass1();
-
-        String[] parts =  obj.splitString("", 1);
-
-        assertEquals(1, parts.length);
+        assertArrayEquals(expectedParts, actualParts);
 
     }
 
     @Test
-    void testSplitStringGalateaTwoParts() {
+    void testSplitStringAt4Parts() {
 
-        DummyClass1 obj = new DummyClass1();
+        DummyClass1 dc1 = new DummyClass1();
+        String[] expectedParts = {"abcd","efgh","ijkl","mnop"};
 
-        String[] parts =  obj.splitString("Galatea", 2);
+        String[] actualParts = dc1.splitString("abcdefghijklmnop", 4);
 
-        assertEquals(2, parts.length);
-
-    }
-
-    @Test
-    void testSplitStringGalTwoParts() {
-
-        DummyClass1 obj = new DummyClass1();
-
-        String[] parts =  obj.splitString("Gal", 2);
-
-        assertEquals(2, parts.length);
+        assertArrayEquals(expectedParts, actualParts);
 
     }
 
     @Test
-    void testSplitStringGalThreeParts() {
+    void testSplitStringAt0Parts() {
 
-        DummyClass1 obj = new DummyClass1();
+        DummyClass1 dc1 = new DummyClass1();
+        String[] expectedParts = {"abcd"};
 
-        String[] parts =  obj.splitString("Gal", 3);
+        String[] actualParts = dc1.splitString("abcd", 0);
 
-        assertEquals(3, parts.length);
-
-    }
-
-
-    @Test
-    void testSplitStringFullSentenceTwoParts() {
-
-        DummyClass1 obj = new DummyClass1();
-
-        String[] parts =  obj.splitString("Hello wonderful people.", 2);
-
-        assertEquals(2, parts.length);
-
+        assertArrayEquals(expectedParts, actualParts);
     }
 
     @Test
-    void testSplitStringFullSentenceThreeParts() {
+    void testSplitStringNotEvenNumberOfLetters() {
 
-        DummyClass1 obj = new DummyClass1();
+        DummyClass1 dc1 = new DummyClass1();
 
-        String[] parts =  obj.splitString("Hello wonderful people.", 3);
+        String[] expectedParts = {"abcde"};
 
-        assertEquals(3, parts.length);
+        String[] actualParts = dc1.splitString("abcde", 2);
 
+        assertArrayEquals(expectedParts, actualParts);
     }
 
     @Test
-    void testSplitStringOnlySpacesTwoParts() {
+    void testSplitStringNotEvenNumberOfLettersAndZeroParts() {
 
-        DummyClass1 obj = new DummyClass1();
+        DummyClass1 dc1 = new DummyClass1();
 
-        String[] parts =  obj.splitString("                ", 2);
+        String[] expectedParts = {"abcde"};
 
-        assertEquals(2, parts.length);
+        String[] actualParts = dc1.splitString("abcde", 0);
 
+        assertArrayEquals(expectedParts, actualParts);
     }
 
     @Test
-    void testSplitStringOnlySpacesThreeParts() {
+    void testSplitStringNegativeNumOfParts() {
 
-        DummyClass1 obj = new DummyClass1();
+        DummyClass1 dc1 = new DummyClass1();
 
-        String[] parts =  obj.splitString("                ", 3);
+        String[] expectedParts = {"abcd"};
 
-        assertEquals(3, parts.length);
+        String[] actualParts = dc1.splitString("abcd", -2);
 
+        assertArrayEquals(expectedParts, actualParts);
     }
 
+    @Test
+    void testSplitStringWithTextUnableToSplitInSoManyParts() {
+
+        DummyClass1 dc1 = new DummyClass1();
+
+        String[] expectedParts = {"ab"};
+
+        String[] actualParts = dc1.splitString("ab", 4);
+
+        assertArrayEquals(expectedParts, actualParts);
+    }
 
 }
