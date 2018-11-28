@@ -55,7 +55,7 @@ class DummyClass1Test {
     }
 
     @Test
-    void checkCountEvenNumersCounterNegativeNumbers() {
+    void checkCountEvenNumbersCounterNegativeNumbers() {
 
         DummyClass1 dc1 = new DummyClass1();
         int[] array_nums = {-122, -44, -55};
