@@ -9,6 +9,15 @@ public class DummyClass1 {
 
         String[] splittedParts = null;
 
+<<<<<<< HEAD
+=======
+        if(numOfPartsToSplit <= 0) {
+            splittedParts = new String[1];
+            splittedParts[0] = text;
+            return splittedParts;
+        }
+
+>>>>>>> dd160242588158cd183a6f739b5218c4cbe5f6c5
         if (textSize % numOfPartsToSplit != 0) {
             splittedParts = new String[1];
             splittedParts[0] = text;
@@ -36,5 +45,8 @@ public class DummyClass1 {
 
         return splittedParts;
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> dd160242588158cd183a6f739b5218c4cbe5f6c5
 }

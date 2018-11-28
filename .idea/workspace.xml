@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7902fa1f-85ad-47d2-ba5c-8d7224713840" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/src/main/java/co/thebeat/ExerciseK/Main.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/co/thebeat/ExerciseK/Square.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -19,6 +20,11 @@
       <change beforePath="$PROJECT_DIR$/target/test-classes/co/thebeat/ExerciseG/DummyClass1Test.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/co/thebeat/ExerciseG/DummyClass2Test.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/co/thebeat/ExerciseG/DummyClass3Test.class" beforeDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/thebeat/ExerciseJ/Diamond.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+>>>>>>> dd160242588158cd183a6f739b5218c4cbe5f6c5
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -27,6 +33,13 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CheckStyle-IDEA-workspace">
+    <option name="configuration">
+      <map>
+        <entry key="last-active-plugin-version" />
+      </map>
+    </option>
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-1584488711">
@@ -69,6 +82,7 @@
         </counts>
       </usages-collector>
     </session>
+<<<<<<< HEAD
     <session id="150979346">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
@@ -79,30 +93,59 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="java" value="7" />
+=======
+    <session id="-1306726619">
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="class" value="1" />
+          <entry key="gitignore" value="1" />
+          <entry key="java" value="28" />
+          <entry key="pub" value="1" />
+>>>>>>> dd160242588158cd183a6f739b5218c4cbe5f6c5
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+<<<<<<< HEAD
           <entry key="JAVA" value="7" />
+=======
+          <entry key="CLASS" value="1" />
+          <entry key="JAVA" value="28" />
+          <entry key="PLAIN_TEXT" value="2" />
+>>>>>>> dd160242588158cd183a6f739b5218c4cbe5f6c5
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+<<<<<<< HEAD
           <entry key="java" value="567" />
+=======
+          <entry key="dummy" value="7" />
+          <entry key="java" value="1264" />
+          <entry key="txt" value="46" />
+>>>>>>> dd160242588158cd183a6f739b5218c4cbe5f6c5
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+<<<<<<< HEAD
           <entry key="JAVA" value="567" />
         </counts>
       </usages-collector>
     </session>
     <session id="-1563169349">
+=======
+          <entry key="JAVA" value="1264" />
+          <entry key="PLAIN_TEXT" value="53" />
+        </counts>
+      </usages-collector>
+>>>>>>> dd160242588158cd183a6f739b5218c4cbe5f6c5
       <usages-collector id="statistics.vcs.git.usages">
         <counts>
           <entry key="git.branch.merge" value="1" />
         </counts>
       </usages-collector>
+<<<<<<< HEAD
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="java" value="185" />
@@ -149,12 +192,99 @@
         </entry>
       </file>
     </leaf>
+=======
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.18" value="1" />
+          <entry key="project.open.time.20" value="1" />
+          <entry key="project.opened" value="3" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <splitter split-orientation="horizontal" split-proportion="0.3284345">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseH/DummyClass1Test.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="60">
+                  <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseI/DummyClass1Test.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="107">
+                  <caret line="68" column="9" selection-start-line="68" selection-start-column="9" selection-end-line="68" selection-end-column="9" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/co/thebeat/ExerciseI/DummyClass1.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="120">
+                  <caret line="8" selection-start-line="8" selection-end-line="8" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseG/DummyClass4Test.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="390">
+                  <caret line="28" column="53" selection-start-line="28" selection-start-column="53" selection-end-line="28" selection-end-column="53" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/co/thebeat/ExerciseH/DummyClass1.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="285">
+                  <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/co/thebeat/ExerciseJ/Diamond.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="107">
+                  <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+>>>>>>> dd160242588158cd183a6f739b5218c4cbe5f6c5
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -174,6 +304,7 @@
         <option value="$PROJECT_DIR$/src/test/java/com/thebeat/co/ExerciseG/DummyClass3Test.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/thebeat/co/ExerciseG/DummyClass4.java" />
         <option value="$PROJECT_DIR$/src/main/java/thebeat/co/ExerciseG/DummyClass4.java" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/test/java/ExerciseH/DummyClass1Test.java" />
         <option value="$PROJECT_DIR$/src/main/java/ExerciseH/DummyClass1.java" />
         <option value="$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseH/DummyClass1Test.java" />
@@ -183,6 +314,16 @@
         <option value="$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseG/DummyClass2Test.java" />
         <option value="$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseG/DummyClass1Test.java" />
         <option value="$PROJECT_DIR$/src/main/java/co/thebeat/ExerciseK/Main.java" />
+=======
+        <option value="$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseG/DummyClass1Test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/co/thebeat/ExerciseH/DummyClass1.java" />
+        <option value="$PROJECT_DIR$/src/main/java/co/thebeat/ExerciseG/DummyClass4.java" />
+        <option value="$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseH/DummyClass1Test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/co/thebeat/ExerciseI/DummyClass1.java" />
+        <option value="$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseI/DummyClass1Test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/co/thebeat/ExerciseJ/DiamondClass.java" />
+        <option value="$PROJECT_DIR$/src/main/java/co/thebeat/ExerciseJ/Diamond.java" />
+>>>>>>> dd160242588158cd183a6f739b5218c4cbe5f6c5
       </list>
     </option>
   </component>
@@ -196,7 +337,11 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
     <option name="width" value="1440" />
+<<<<<<< HEAD
     <option name="height" value="810" />
+=======
+    <option name="height" value="823" />
+>>>>>>> dd160242588158cd183a6f739b5218c4cbe5f6c5
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -205,6 +350,11 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< HEAD
+=======
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+>>>>>>> dd160242588158cd183a6f739b5218c4cbe5f6c5
       <pane id="PackagesPane" />
       <pane id="AndroidView" />
       <pane id="Scope" />
@@ -277,16 +427,14 @@
               <item name="beat_java_community_exercises" type="b2602c69:ProjectViewProjectNode" />
               <item name="beat_java_community_exercises" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="thebeat" type="462c0819:PsiDirectoryNode" />
               <item name="ExerciseK" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="beat_java_community_exercises" type="b2602c69:ProjectViewProjectNode" />
-              <item name="beat_java_community_exercises" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+=======
               <item name="test" type="462c0819:PsiDirectoryNode" />
+>>>>>>> dd160242588158cd183a6f739b5218c4cbe5f6c5
             </path>
             <path>
               <item name="beat_java_community_exercises" type="b2602c69:ProjectViewProjectNode" />
@@ -310,6 +458,17 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="thebeat" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
+            </path>
+            <path>
+              <item name="beat_java_community_exercises" type="b2602c69:ProjectViewProjectNode" />
+              <item name="beat_java_community_exercises" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="thebeat" type="462c0819:PsiDirectoryNode" />
+=======
+>>>>>>> dd160242588158cd183a6f739b5218c4cbe5f6c5
               <item name="ExerciseG" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -319,6 +478,7 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="thebeat" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="ExerciseI" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -352,10 +512,14 @@
               <item name="beat_java_community_exercises" type="462c0819:PsiDirectoryNode" />
               <item name="target" type="462c0819:PsiDirectoryNode" />
               <item name="test-classes" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="ExerciseH" type="462c0819:PsiDirectoryNode" />
+>>>>>>> dd160242588158cd183a6f739b5218c4cbe5f6c5
             </path>
             <path>
               <item name="beat_java_community_exercises" type="b2602c69:ProjectViewProjectNode" />
               <item name="beat_java_community_exercises" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="target" type="462c0819:PsiDirectoryNode" />
               <item name="test-classes" type="462c0819:PsiDirectoryNode" />
               <item name="co" type="462c0819:PsiDirectoryNode" />
@@ -367,6 +531,13 @@
               <item name="test-classes" type="462c0819:PsiDirectoryNode" />
               <item name="co" type="462c0819:PsiDirectoryNode" />
               <item name="thebeat" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="thebeat" type="462c0819:PsiDirectoryNode" />
+              <item name="ExerciseI" type="462c0819:PsiDirectoryNode" />
+>>>>>>> dd160242588158cd183a6f739b5218c4cbe5f6c5
             </path>
           </expand>
           <select />
@@ -375,7 +546,12 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+<<<<<<< HEAD
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542825604795" />
+=======
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543422232281" />
+>>>>>>> dd160242588158cd183a6f739b5218c4cbe5f6c5
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -386,7 +562,12 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+<<<<<<< HEAD
       <recent name="ExerciseH" />
+=======
+      <recent name="co.thebeat.ExerciseI" />
+      <recent name="co.thebeat.ExerciseH" />
+>>>>>>> dd160242588158cd183a6f739b5218c4cbe5f6c5
       <recent name="com.thebeat.co.ExerciseG" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -411,6 +592,7 @@
       </list>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="co.thebeat.ExerciseK.Main" />
@@ -418,6 +600,15 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="co.thebeat.ExerciseK.*" />
+=======
+  <component name="RunManager" selected="Application.Diamond">
+    <configuration name="Diamond" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="co.thebeat.ExerciseJ.Diamond" />
+      <module name="javaExercises" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="co.thebeat.ExerciseJ.*" />
+>>>>>>> dd160242588158cd183a6f739b5218c4cbe5f6c5
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -425,6 +616,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
     <configuration name="DummyClass1Test.countEvenNumbersFiveEvenAllNegativeNumbers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="beat_java_community_exercises" />
       <extension name="coverage">
@@ -437,10 +629,25 @@
       <option name="MAIN_CLASS_NAME" value="ExerciseH.DummyClass1Test" />
       <option name="METHOD_NAME" value="countEvenNumbersFiveEvenAllNegativeNumbers" />
       <option name="TEST_OBJECT" value="method" />
+=======
+    <configuration name="DummyClass1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaExercises" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="co.thebeat.ExerciseH.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="co.thebeat.ExerciseI" />
+      <option name="MAIN_CLASS_NAME" value="co.thebeat.ExerciseI.DummyClass1" />
+      <option name="METHOD_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+>>>>>>> dd160242588158cd183a6f739b5218c4cbe5f6c5
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
     <configuration name="DummyClass1Test.countEvenNumbersFiveEvenAllZeroNumbers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="beat_java_community_exercises" />
       <extension name="coverage">
@@ -453,10 +660,23 @@
       <option name="MAIN_CLASS_NAME" value="ExerciseH.DummyClass1Test" />
       <option name="METHOD_NAME" value="countEvenNumbersFiveEvenAllZeroNumbers" />
       <option name="TEST_OBJECT" value="method" />
+=======
+    <configuration name="DummyClass1Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaExercises" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="co.thebeat.ExerciseI.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="co.thebeat.ExerciseI" />
+      <option name="MAIN_CLASS_NAME" value="co.thebeat.ExerciseI.DummyClass1Test" />
+>>>>>>> dd160242588158cd183a6f739b5218c4cbe5f6c5
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
     <configuration name="DummyClass1Test.countEvenNumbersTwoEvenOneNegativeNumbers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="beat_java_community_exercises" />
       <extension name="coverage">
@@ -468,11 +688,25 @@
       <option name="PACKAGE_NAME" value="ExerciseH" />
       <option name="MAIN_CLASS_NAME" value="ExerciseH.DummyClass1Test" />
       <option name="METHOD_NAME" value="countEvenNumbersTwoEvenOneNegativeNumbers" />
+=======
+    <configuration name="DummyClass1Test.checkIfTwoNumbersAreEquals" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaExercises" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="co.thebeat.ExerciseH.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="co.thebeat.ExerciseH" />
+      <option name="MAIN_CLASS_NAME" value="co.thebeat.ExerciseH.DummyClass1Test" />
+      <option name="METHOD_NAME" value="checkIfTwoNumbersAreEquals" />
+>>>>>>> dd160242588158cd183a6f739b5218c4cbe5f6c5
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
     <configuration name="DummyClass1Test.countEvenNumbersZeroEvenAllOddNegativeNumbers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="beat_java_community_exercises" />
       <extension name="coverage">
@@ -484,12 +718,26 @@
       <option name="PACKAGE_NAME" value="ExerciseH" />
       <option name="MAIN_CLASS_NAME" value="ExerciseH.DummyClass1Test" />
       <option name="METHOD_NAME" value="countEvenNumbersZeroEvenAllOddNegativeNumbers" />
+=======
+    <configuration name="DummyClass1Test.countEvenNumbers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaExercises" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="co.thebeat.ExerciseH.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="co.thebeat.ExerciseH" />
+      <option name="MAIN_CLASS_NAME" value="co.thebeat.ExerciseH.DummyClass1Test" />
+      <option name="METHOD_NAME" value="countEvenNumbers" />
+>>>>>>> dd160242588158cd183a6f739b5218c4cbe5f6c5
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
+<<<<<<< HEAD
       <item itemvalue="JUnit.DummyClass1Test.countEvenNumbersTwoEvenOneNegativeNumbers" />
       <item itemvalue="JUnit.DummyClass1Test.countEvenNumbersZeroEvenAllOddNegativeNumbers" />
       <item itemvalue="JUnit.DummyClass1Test.countEvenNumbersFiveEvenAllNegativeNumbers" />
@@ -503,6 +751,21 @@
         <item itemvalue="JUnit.DummyClass1Test.countEvenNumbersFiveEvenAllNegativeNumbers" />
         <item itemvalue="JUnit.DummyClass1Test.countEvenNumbersZeroEvenAllOddNegativeNumbers" />
         <item itemvalue="JUnit.DummyClass1Test.countEvenNumbersTwoEvenOneNegativeNumbers" />
+=======
+      <item itemvalue="JUnit.DummyClass1Test.countEvenNumbers" />
+      <item itemvalue="JUnit.DummyClass1" />
+      <item itemvalue="JUnit.DummyClass1Test.checkIfTwoNumbersAreEquals" />
+      <item itemvalue="JUnit.DummyClass1Test" />
+      <item itemvalue="Application.Diamond" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Diamond" />
+        <item itemvalue="JUnit.DummyClass1Test" />
+        <item itemvalue="JUnit.DummyClass1" />
+        <item itemvalue="JUnit.DummyClass1Test.checkIfTwoNumbersAreEquals" />
+        <item itemvalue="JUnit.DummyClass1Test.countEvenNumbers" />
+>>>>>>> dd160242588158cd183a6f739b5218c4cbe5f6c5
       </list>
     </recent_temporary>
   </component>
@@ -517,9 +780,53 @@
       <option name="presentableId" value="Default" />
       <updated>1542018575072</updated>
     </task>
+    <task id="LOCAL-00001" summary="First commit">
+      <created>1542214648355</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1542214648355</updated>
+    </task>
+    <task id="LOCAL-00002" summary="First commit">
+      <created>1542215525417</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1542215525418</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Exercise H tests">
+      <created>1542218709376</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1542218709376</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Exercise H tests">
+      <created>1542219065204</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1542219065204</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Exercise H tests">
+      <created>1542219155706</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1542219155706</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Exercise I tests">
+      <created>1543151898038</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1543151898038</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
+<<<<<<< HEAD
     <history-entry file="DummyClass1Test_checkHowManyNumbersAreEqualZeroEquals - 2018.11.14 at 19h 44m 16s.xml">
       <configuration name="DummyClass1Test.checkHowManyNumbersAreEqualZeroEquals" configurationId="JUnit" />
     </history-entry>
@@ -549,13 +856,59 @@
     </history-entry>
     <history-entry file="DummyClass1Test_countEvenNumbersFiveEvenAllZeroNumbers - 2018.11.14 at 19h 52m 10s.xml">
       <configuration name="DummyClass1Test.countEvenNumbersFiveEvenAllZeroNumbers" configurationId="JUnit" />
+=======
+    <history-entry file="DummyClass4Test - 2018.11.13 at 17h 27m 50s.xml">
+      <configuration name="DummyClass4Test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DummyClass1Test_checkHowManyNumbersAreEqual - 2018.11.14 at 19h 40m 05s.xml">
+      <configuration name="DummyClass1Test.checkHowManyNumbersAreEqual" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DummyClass1Test_countEvenNumbers - 2018.11.14 at 20h 01m 27s.xml">
+      <configuration name="DummyClass1Test.countEvenNumbers" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DummyClass1Test_countEvenNumbers - 2018.11.14 at 20h 03m 53s.xml">
+      <configuration name="DummyClass1Test.countEvenNumbers" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DummyClass1Test - 2018.11.14 at 20h 04m 37s.xml">
+      <configuration name="DummyClass1Test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DummyClass1Test_checkIfTwoNumbersAreEquals - 2018.11.14 at 20h 11m 50s.xml">
+      <configuration name="DummyClass1Test.checkIfTwoNumbersAreEquals" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DummyClass1Test - 2018.11.14 at 20h 12m 01s.xml">
+      <configuration name="DummyClass1Test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DummyClass1 - 2018.11.25 at 15h 09m 11s.xml">
+      <configuration name="DummyClass1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DummyClass1Test - 2018.11.25 at 15h 14m 55s.xml">
+      <configuration name="DummyClass1Test" configurationId="JUnit" />
+>>>>>>> dd160242588158cd183a6f739b5218c4cbe5f6c5
+    </history-entry>
+    <history-entry file="DummyClass1Test - 2018.11.25 at 15h 18m 49s.xml">
+      <configuration name="DummyClass1Test" configurationId="JUnit" />
     </history-entry>
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
     <frame x="0" y="23" width="1440" height="842" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2811159" />
+=======
+    <frame x="0" y="23" width="1440" height="823" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22389127" />
+>>>>>>> dd160242588158cd183a6f739b5218c4cbe5f6c5
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -564,6 +917,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
+<<<<<<< HEAD
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.389271" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Terminal" order="4" weight="0.32729805" />
@@ -573,6 +927,17 @@
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32599726" />
+=======
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.47740114" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Terminal" order="4" sideWeight="0.49928468" weight="0.32956153" />
+      <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.5007153" side_tool="true" weight="0.32998565" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32998565" />
+      <window_info anchor="bottom" id="Find" order="7" weight="0.32833958" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32855093" />
+>>>>>>> dd160242588158cd183a6f739b5218c4cbe5f6c5
       <window_info anchor="right" id="Palette" order="0" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" id="Capture Analysis" order="2" />
@@ -616,10 +981,17 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit" />
+<<<<<<< HEAD
     <MESSAGE value="ExerciseH" />
     <MESSAGE value="ExerciseH - fixes" />
     <MESSAGE value="Chessboard creation!" />
     <option name="LAST_COMMIT_MESSAGE" value="Chessboard creation!" />
+=======
+    <MESSAGE value="Configuration and more" />
+    <MESSAGE value="Exercise H tests" />
+    <MESSAGE value="Exercise I tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Exercise I tests" />
+>>>>>>> dd160242588158cd183a6f739b5218c4cbe5f6c5
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/thebeat/co/App.java" />
@@ -638,6 +1010,7 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/thebeat/co/ExerciseG/DummyClass3Test.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/thebeat/co/ExerciseG/DummyClass4Test.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/thebeat/co/ExerciseG/DummyClass4.java" />
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/java/co/thebeat/ExerciseG/DummyClass1.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/co/thebeat/ExerciseG/DummyClass3.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/co/thebeat/ExerciseG/DummyClass4.java" />
@@ -645,12 +1018,65 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1830">
           <caret line="122" column="5" selection-start-line="122" selection-start-column="5" selection-end-line="122" selection-end-column="5" />
+=======
+    <entry file="file://$PROJECT_DIR$/Desktop.pub" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/co/thebeat/ExerciseG/DummyClass1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseG/DummyClass1Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/co/thebeat/ExerciseG/DummyClass3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/co/thebeat/ExerciseG/DummyClass4.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="23" column="34" lean-forward="true" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseG/DummyClass3Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/co/thebeat/ExerciseG/DummyClass2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseG/DummyClass2Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+>>>>>>> dd160242588158cd183a6f739b5218c4cbe5f6c5
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/java/co/thebeat/ExerciseJ/Square.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -721,6 +1147,91 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="56">
           <caret line="31" column="14" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
+=======
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="110" column="19" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/rt.jar!/sun/misc/Launcher.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="255" selection-start-line="255" selection-end-line="255" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/lang/ClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="423" selection-start-line="423" selection-end-line="423" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/net/URLClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="380" selection-start-line="380" selection-end-line="380" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/lang/Class.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="263" selection-start-line="263" selection-end-line="263" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseH/DummyClass1Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/co/thebeat/ExerciseI/DummyClass1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseG/DummyClass4Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="28" column="53" selection-start-line="28" selection-start-column="53" selection-end-line="28" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseI/DummyClass1Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="68" column="9" selection-start-line="68" selection-start-column="9" selection-end-line="68" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/co/thebeat/ExerciseH/DummyClass1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/co/thebeat/ExerciseJ/Diamond.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+>>>>>>> dd160242588158cd183a6f739b5218c4cbe5f6c5
         </state>
       </provider>
     </entry>

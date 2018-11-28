@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+<<<<<<< HEAD
 
 public class DummyClass1Test {
 
@@ -23,10 +24,24 @@ public class DummyClass1Test {
         String[] splitted = dc1.splitString("Electra",2);
         String[] actual = {"ELectra"};
         assertArrayEquals(splitted,actual);
+=======
+class DummyClass1Test {
+
+    @Test
+    void testSplitStringAt2Parts() {
+
+        DummyClass1 dc1 = new DummyClass1();
+        String[] expectedParts = {"abcd","efgh"};
+
+        String[] actualParts = dc1.splitString("abcdefgh", 2);
+
+        assertArrayEquals(expectedParts, actualParts);
+>>>>>>> dd160242588158cd183a6f739b5218c4cbe5f6c5
 
     }
 
     @Test
+<<<<<<< HEAD
     void testSplitStringOneCharText() {
 
         DummyClass1 dc1 = new DummyClass1();
@@ -43,10 +58,21 @@ public class DummyClass1Test {
         String[] splitted = dc1.splitString("ab",2);
         String[] actual = {"a","b"};
         assertArrayEquals(splitted,actual);
+=======
+    void testSplitStringAt4Parts() {
+
+        DummyClass1 dc1 = new DummyClass1();
+        String[] expectedParts = {"abcd","efgh","ijkl","mnop"};
+
+        String[] actualParts = dc1.splitString("abcdefghijklmnop", 4);
+
+        assertArrayEquals(expectedParts, actualParts);
+>>>>>>> dd160242588158cd183a6f739b5218c4cbe5f6c5
 
     }
 
     @Test
+<<<<<<< HEAD
     void testSplitStringSixCharTextThreeParts() {
 
         DummyClass1 dc1 = new DummyClass1();
@@ -106,3 +132,64 @@ public class DummyClass1Test {
 
     }
 }
+=======
+    void testSplitStringAt0Parts() {
+
+        DummyClass1 dc1 = new DummyClass1();
+        String[] expectedParts = {"abcd"};
+
+        String[] actualParts = dc1.splitString("abcd", 0);
+
+        assertArrayEquals(expectedParts, actualParts);
+    }
+
+    @Test
+    void testSplitStringNotEvenNumberOfLetters() {
+
+        DummyClass1 dc1 = new DummyClass1();
+
+        String[] expectedParts = {"abcde"};
+
+        String[] actualParts = dc1.splitString("abcde", 2);
+
+        assertArrayEquals(expectedParts, actualParts);
+    }
+
+    @Test
+    void testSplitStringNotEvenNumberOfLettersAndZeroParts() {
+
+        DummyClass1 dc1 = new DummyClass1();
+
+        String[] expectedParts = {"abcde"};
+
+        String[] actualParts = dc1.splitString("abcde", 0);
+
+        assertArrayEquals(expectedParts, actualParts);
+    }
+
+    @Test
+    void testSplitStringNegativeNumOfParts() {
+
+        DummyClass1 dc1 = new DummyClass1();
+
+        String[] expectedParts = {"abcd"};
+
+        String[] actualParts = dc1.splitString("abcd", -2);
+
+        assertArrayEquals(expectedParts, actualParts);
+    }
+
+    @Test
+    void testSplitStringWithTextUnableToSplitInSoManyParts() {
+
+        DummyClass1 dc1 = new DummyClass1();
+
+        String[] expectedParts = {"ab"};
+
+        String[] actualParts = dc1.splitString("ab", 4);
+
+        assertArrayEquals(expectedParts, actualParts);
+    }
+
+}
+>>>>>>> dd160242588158cd183a6f739b5218c4cbe5f6c5
