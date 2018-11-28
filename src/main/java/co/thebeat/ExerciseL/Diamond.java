@@ -8,8 +8,8 @@ public class Diamond {
     private String space;
 
     public Diamond() {
-        maxStars = 13;
-        stars = "*";
+        this.maxStars = 13;
+        this.stars = "*";
     }
 
     public void printStars() {
@@ -37,12 +37,10 @@ public class Diamond {
 
         }
 
-        maxStars = maxStars - 2;
-
-        for (int i = maxStars; i > 0; i = i - 2) {
+        for (int i = maxStars - 2; i > 0; i = i - 2) {
 
             space = " ";
-            offset = (maxStars - i) / 2;
+            offset = ((maxStars - 2) - i) / 2;
 
             for (int x = 0; x < offset; x++) {
 
