@@ -7,8 +7,6 @@ public class Main {
 
         d1.printStars();
 
-        d1.printStars();
-
     }
 
 }
