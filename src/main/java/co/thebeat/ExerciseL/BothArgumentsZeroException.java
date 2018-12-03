@@ -1,4 +1,4 @@
 package co.thebeat.ExerciseL;
 
-public class BothArgumentsZeroException {
+public class BothArgumentsZeroException extends Exception {
 }
