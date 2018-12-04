@@ -9,7 +9,7 @@ public class DummyClass1 {
 
         String[] splittedParts = null;
 
-        if(numOfPartsToSplit <=0 ) {
+        if (numOfPartsToSplit <= 0) {
             splittedParts = new String[1];
             splittedParts[0] = text;
             return splittedParts;
@@ -42,3 +42,4 @@ public class DummyClass1 {
 
         return splittedParts;
     }
+}
