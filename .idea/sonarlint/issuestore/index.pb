@@ -1,12 +1,6 @@
 
 g
 7src/test/java/co/thebeat/ExerciseG/DummyClass2Test.java,c/7/c774df71709a94f2e77617b42cc638b766d8774d
-c
-3src/main/java/co/thebeat/ExerciseG/DummyClass3.java,8/b/8bafeb67a030e085d3d62de4f8bec36ffe5e19d2
-c
-3src/main/java/co/thebeat/ExerciseG/DummyClass2.java,f/5/f536f0007da5d29805b1a8a851d1544074533f1b
-c
-3src/main/java/co/thebeat/ExerciseG/DummyClass1.java,3/b/3b8c85905d18eaf4526e68f01f0c34e62de1f95d
 g
 7src/test/java/co/thebeat/ExerciseG/DummyClass4Test.java,2/0/20ce6746143c7876187475352b1aa2fc1b5264e7
 c
@@ -19,3 +13,19 @@ g
 7src/test/java/co/thebeat/ExerciseH/DummyClass1Test.java,1/a/1a3499f84a6337090007e4c4854628286b397555
 c
 3src/main/java/co/thebeat/ExerciseH/DummyClass1.java,1/a/1a021afc1096cde7750dfb7d80f82aedb3722716
+c
+3src/main/java/co/thebeat/ExerciseI/DummyClass1.java,2/0/20ec28e15943e5212a80a2f68a16c79b840895cc
+^
+.src/main/java/co/thebeat/ExerciseJ/Square.java,f/7/f7ff76513e1718e5e29a1815d9a388ad3f14ca52
+\
+,src/main/java/co/thebeat/ExerciseK/Main.java,7/6/764f5dc23341fbe56818e52cb1dd8b783adc3a7b
+^
+.src/main/java/co/thebeat/ExerciseK/Square.java,4/1/410458f6d4dcf0835eabcc7a73efb76ce7dc8887
+\
+,src/main/java/co/thebeat/ExerciseJ/Main.java,3/3/33460ce50075cca5c306ae98d36a5bba690a05b8
+_
+/src/main/java/co/thebeat/ExerciseJ/Diamond.java,0/8/08d5c57c93a131f5a22bac01508bd13ba187256f
+e
+5src/main/java/co/thebeat/ExcerciseL/DummyClass10.java,f/e/fe0023f9c9da483c38e832f560b9b4fbaeac2d6c
+]
+-src/main/java/co/thebeat/ExcerciseL/Main.java,7/7/77f1a6c14592806fe6f082bed243115dbd1b0836
