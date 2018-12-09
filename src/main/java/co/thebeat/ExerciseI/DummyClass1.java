@@ -7,16 +7,12 @@ public class DummyClass1 {
         int textSize = text.length();
         int partSize;
 
-
         String[] splittedParts = null;
 
-        if (numOfPartsToSplit <= 0){
-
-            splittedParts = new String [1];
-            splittedParts [0] = text;
+        if(numOfPartsToSplit <= 0) {
+            splittedParts = new String[1];
+            splittedParts[0] = text;
             return splittedParts;
-
-
         }
 
         if (textSize % numOfPartsToSplit != 0) {

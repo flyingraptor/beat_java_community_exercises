@@ -1,31 +1,34 @@
 package co.thebeat.ExerciseJ;
 
+import java.util.Scanner;
+
 public class Main {
 
-    public static void main(String[] args){
-        Square[][] chessboard = new Square[8][8];
+    public static void main(String[] args) {
 
-        System.out.println((char)97);
-
-        for (int row =0; row < 8; row++){ // row < chessboard[].length
-
-            for (int column = 0; column < 8; column++){
-
-                Square sqr = new Square (String.valueOf((char)(row+97)), column+1);
-                chessboard [row][column] = sqr;
+        int i,j,r;
+        System.out.print("Input number of rows (half of the diamond) : ");
+        Scanner in = new Scanner(System.in);
+        r = in.nextInt();
+        for(i=0;i<=r;i++) {
+            for(j=1;j<=r-i;j++) {
+                System.out.print(" ");
+                System.out.print(j+","+i);
             }
+            for(j=1;j<=2*i-1;j++) {
+                System.out.print("*");
+                System.out.print(j+"/"+i);
+            }
+            System.out.print("\n");
         }
 
-        for(int row = 0;row < 8; row++){
-
-            for (int column = 0;column <8; column++){
-
-                System.out.print(chessboard[row][column].getRow() + chessboard[row][column].getColumn() + " ");
-
-            }
-            System.out.println();
+        for(i=r-1;i>=1;i--) {
+            for(j=1;j<=r-i;j++)
+                System.out.print(" ");
+            for(j=1;j<=2*i-1;j++)
+                System.out.print("*");
+            System.out.print("\n");
         }
 
     }
-
 }
