@@ -29,3 +29,7 @@ e
 5src/main/java/co/thebeat/ExcerciseL/DummyClass10.java,f/e/fe0023f9c9da483c38e832f560b9b4fbaeac2d6c
 ]
 -src/main/java/co/thebeat/ExcerciseL/Main.java,7/7/77f1a6c14592806fe6f082bed243115dbd1b0836
+g
+7src/test/java/co/thebeat/ExerciseL/DummyClass1Test.java,f/6/f6a5a86c52551abfff1b84a77d877fd3d14c0c2e
+g
+7src/test/java/co/thebeat/ExerciseI/DummyClass1Test.java,4/0/40191b3b113f1cd4dd56bc606f8b24667fea3a3d
