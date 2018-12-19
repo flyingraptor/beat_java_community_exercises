@@ -28,7 +28,6 @@ public class Timetable {
         System.out.println("6. Back");
     }
 
-
     public void printTimesScreen() {
 
         System.out.println("Please select a time to Add/Update a lesson");
