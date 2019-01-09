@@ -1,0 +1,33 @@
+
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(“Úÿÿÿÿÿÿ
+O
+squid:S106"9Replace this use of System.out or System.err by a logger.(ÅØ«„
+O
+squid:S106"9Replace this use of System.out or System.err by a logger.(ÀÇ–
+O
+squid:S106!"9Replace this use of System.out or System.err by a logger.( ‹’«
+T
+squid:S106&"9Replace this use of System.out or System.err by a logger.(¨„¯ğúÿÿÿÿ
+O
+squid:S106*"9Replace this use of System.out or System.err by a logger.(ÀÇ–
+N
+squid:S106/"9Replace this use of System.out or System.err by a logger.(”¼³1
+N
+squid:S1060"9Replace this use of System.out or System.err by a logger.(ğš­H
+T
+squid:S1064"9Replace this use of System.out or System.err by a logger.(—Ç°Œıÿÿÿÿ
+T
+squid:S1066"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+T
+squid:S1069"9Replace this use of System.out or System.err by a logger.(Î¿ƒãûÿÿÿÿ
+N
+squid:S106@"9Replace this use of System.out or System.err by a logger.(¤³Œi
+T
+squid:S106B"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+}"squid:ClassVariableVisibilityCheck"PMake days a static final constant or non-public and provide accessors if needed.(Ç¶»d
+~"squid:ClassVariableVisibilityCheck"PMake time a static final constant or non-public and provide accessors if needed.(©ù”
+„"squid:ClassVariableVisibilityCheck
+"QMake slots a static final constant or non-public and provide accessors if needed.(Ø¥·ÿÿÿÿÿ
+rsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‰‚Â¨
+Vsquid:UselessImportCheck"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ

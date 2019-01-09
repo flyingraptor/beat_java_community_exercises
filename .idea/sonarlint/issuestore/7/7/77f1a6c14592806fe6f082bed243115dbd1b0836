@@ -1,0 +1,4 @@
+
+Rsquid:S1481	"/Remove this unused "chessboard" local variable.(ÍÈ´¿ıÿÿÿÿ8©™Úõ,
+rsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¬»éî
+asquid:S1854	">Remove this useless assignment to local variable "chessboard".(ÍÈ´¿ıÿÿÿÿ8©™Úõ,

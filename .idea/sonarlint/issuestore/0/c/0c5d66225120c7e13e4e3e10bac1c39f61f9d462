@@ -1,0 +1,24 @@
+
+O
+squid:S106
+"9Replace this use of System.out or System.err by a logger.(ÑÙ¶•
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(²§üÿÿÿÿÿ
+O
+squid:S106"9Replace this use of System.out or System.err by a logger.(¤¸äû
+O
+squid:S106"9Replace this use of System.out or System.err by a logger.(–ŞÀ²
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(€Õ­ªüÿÿÿÿ
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(×„„¹øÿÿÿÿ
+T
+squid:S106)"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+T
+squid:S1067"9Replace this use of System.out or System.err by a logger.(İå²ìúÿÿÿÿ
+T
+squid:S106="9Replace this use of System.out or System.err by a logger.(â‰…ªıÿÿÿÿ
+rsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‰‚Â¨
+Ssquid:UselessImportCheck"*Remove this unused import 'java.sql.Time'.(Üå»‰şÿÿÿÿ
