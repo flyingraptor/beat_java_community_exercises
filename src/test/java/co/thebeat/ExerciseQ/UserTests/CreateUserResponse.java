@@ -4,6 +4,7 @@ import com.google.gson.annotations.SerializedName;
 
 public class CreateUserResponse {
 
+    //meta
     @SerializedName("_meta")
     private CreateUserResponseMetadata metadata;
 
