@@ -2,23 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7902fa1f-85ad-47d2-ba5c-8d7224713840" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseQ/UserTests/CreateUserAPITest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseQ/UserTests/CreateUserResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseQ/UserTests/CreateUserResponseMetadata.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseQ/UserTests/CreateUserResponseResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseQ/UserTests/UserAPI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ExerciseH/DummyClass1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/co/thebeat/ExerciseG/DummyClass1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/co/thebeat/ExerciseG/DummyClass1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/co/thebeat/ExerciseG/DummyClass2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/co/thebeat/ExerciseG/DummyClass2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/co/thebeat/ExerciseG/DummyClass3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/co/thebeat/ExerciseG/DummyClass3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/co/thebeat/ExerciseG/DummyClass4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/co/thebeat/ExerciseG/DummyClass4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/co/thebeat/ExerciseH/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/co/thebeat/ExerciseI/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ExerciseH/DummyClass1Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/co/thebeat/ExerciseH/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/co/thebeat/ExerciseI/.gitignore" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -29,12 +13,15 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseQ/UserTests/CreateUserAPITest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="43">
-              <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+            <state relative-caret-position="-56">
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -63,7 +50,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseQ/UserTests/CreateUserResponse.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
+            <state relative-caret-position="105">
               <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
             </state>
           </provider>
@@ -72,7 +59,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseQ/UserTests/CreateUserResponseResult.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1358">
+            <state relative-caret-position="844">
               <caret line="92" column="5" selection-start-line="92" selection-start-column="5" selection-end-line="92" selection-end-column="5" />
             </state>
           </provider>
@@ -148,8 +135,8 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1280" />
-    <option name="height" value="654" />
+    <option name="width" value="1906" />
+    <option name="height" value="1013" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -161,6 +148,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -263,12 +251,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548873139474" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548873188143" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -378,10 +365,10 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
+      <item itemvalue="JUnit.CreateUserAPITest" />
+      <item itemvalue="JUnit.CreateUserAPITest.testCreateUser" />
       <item itemvalue="JUnit.DummyClass4Test.testCheckIfArrayContainsHappyPath" />
       <item itemvalue="JUnit.com.thebeat.co.ExerciseG" />
-      <item itemvalue="JUnit.CreateUserAPITest.testCreateUser" />
-      <item itemvalue="JUnit.CreateUserAPITest" />
     </list>
     <recent_temporary>
       <list>
@@ -425,7 +412,14 @@
       <option name="project" value="LOCAL" />
       <updated>1545246280769</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Create User API Test">
+      <created>1548873184585</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1548873184585</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -470,10 +464,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="654" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1906" height="1013" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24474959" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16523606" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -537,7 +530,8 @@
     <MESSAGE value="added missing curly bracket after merge with raptis branch" />
     <MESSAGE value="ExerciseN solution" />
     <MESSAGE value="deleted unused empty class" />
-    <option name="LAST_COMMIT_MESSAGE" value="deleted unused empty class" />
+    <MESSAGE value="Create User API Test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create User API Test" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/thebeat/co/App.java" />
@@ -669,13 +663,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseQ/UserTests/CreateUserResponseResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1358">
-          <caret line="92" column="5" selection-start-line="92" selection-start-column="5" selection-end-line="92" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="317">
@@ -690,6 +677,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseQ/UserTests/CreateUserResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseQ/UserTests/CreateUserResponseMetadata.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -697,10 +691,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseQ/UserTests/CreateUserResponse.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseQ/UserTests/CreateUserResponseResult.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+        <state relative-caret-position="844">
+          <caret line="92" column="5" selection-start-line="92" selection-start-column="5" selection-end-line="92" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -716,8 +710,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseQ/UserTests/CreateUserAPITest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="43">
-          <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+        <state relative-caret-position="-56">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
