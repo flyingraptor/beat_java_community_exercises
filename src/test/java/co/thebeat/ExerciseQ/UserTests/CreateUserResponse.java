@@ -28,4 +28,5 @@ public class CreateUserResponse {
     public void setMetadata(CreateUserResponseMetadata metadata) {
         this.metadata = metadata;
     }
+
 }

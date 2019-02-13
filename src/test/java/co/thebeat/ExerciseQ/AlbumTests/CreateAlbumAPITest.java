@@ -54,6 +54,7 @@ public class CreateAlbumAPITest {
         if(createAlbumResponse.isSuccessful()) {
             System.out.println("Success!!");
             AlbumResponse responseBody = createAlbumResponse.body();
+
             String createdAlbumId = responseBody.getResult().getId();
             String returnedTitleFromCreation = responseBody.getResult().getTitle();
 
