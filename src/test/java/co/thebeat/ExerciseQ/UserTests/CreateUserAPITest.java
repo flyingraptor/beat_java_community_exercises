@@ -35,6 +35,7 @@ public class CreateUserAPITest {
         retrofitClientBuilder.baseUrl("https://gorest.co.in");
         retrofitClientBuilder.addConverterFactory(gsonConverterFactory);
         retrofitClient = retrofitClientBuilder.build();
+        userAPI = retrofitClient.create(UserAPI.class);
     }
 
     @Test
@@ -44,12 +45,12 @@ public class CreateUserAPITest {
 
         //Execute the request
         Call<CreateUserResponse> userCall = userAPI.createUser(CREDENTIALS,requestBody);
-        Response<CreateUserResponse> createUserResponse = userCall.execute();
+        Response<CreateUserResponse> httpResponse = userCall.execute();
 
         //Check the response
-        if(createUserResponse.isSuccessful()) {
+        if(httpResponse.isSuccessful()) {
             System.out.println("Success!!");
-            CreateUserResponse responseBody = createUserResponse.body();
+            CreateUserResponse responseBody = httpResponse.body();
             System.out.println(responseBody.getMetadata().getCode());
             System.out.println(responseBody.getMetadata().getMessage());
             System.out.println(responseBody.getMetadata().isSuccess());
@@ -61,7 +62,6 @@ public class CreateUserAPITest {
 
     private void prepareUserCreationRequest() {
         //Create the request
-        userAPI = retrofitClient.create(UserAPI.class);
         requestBody = RequestBody.create(MediaType.parse("application/json"),
                 "{\"first_name\":\"user0\"," +
                         "\"last_name\":\"user0\"," +

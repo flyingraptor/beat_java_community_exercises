@@ -38,6 +38,7 @@ public class CreateAlbumAPITest {
         retrofitClientBuilder.baseUrl("https://gorest.co.in");
         retrofitClientBuilder.addConverterFactory(gsonConverterFactory);
         retrofitClient = retrofitClientBuilder.build();
+        albumAPI = retrofitClient.create(AlbumAPI.class);
     }
 
     @Test
@@ -57,8 +58,8 @@ public class CreateAlbumAPITest {
             String returnedTitleFromCreation = responseBody.getResult().getTitle();
 
             albumCall = albumAPI.getAlbumById(CREDENTIALS, createdAlbumId);
-            Response<AlbumResponse> getAlbumResponseWrap = albumCall.execute();
-            AlbumResponse getAlbumResponse = getAlbumResponseWrap.body();
+            Response<AlbumResponse> httpResponse = albumCall.execute();
+            AlbumResponse getAlbumResponse = httpResponse.body();
 
             //Test
             assertEquals(createdAlbumId, getAlbumResponse.getResult().getId());
@@ -72,7 +73,6 @@ public class CreateAlbumAPITest {
 
     private void prepareAlbumCreationRequest() {
         //Create the request
-        albumAPI = retrofitClient.create(AlbumAPI.class);
         requestBody = RequestBody.create(MediaType.parse("application/json"),
                 "{\"user_id\":\"1224\"," +
                         "\"title\":\"album title\"}");
