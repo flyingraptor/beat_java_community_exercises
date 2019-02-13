@@ -1,6 +1,6 @@
 package co.thebeat.ExerciseQ.UserTests;
 
-public class CreateUserResponseResult {
+public class UserResponseResult {
 
     private String id;
 

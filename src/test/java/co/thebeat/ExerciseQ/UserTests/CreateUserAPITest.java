@@ -13,6 +13,9 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 import java.io.IOException;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 public class CreateUserAPITest {
 
     private Retrofit retrofitClient;
@@ -44,17 +47,28 @@ public class CreateUserAPITest {
         prepareUserCreationRequest();
 
         //Execute the request
-        Call<CreateUserResponse> userAPICall = userAPI.createUser(CREDENTIALS,requestBody);
-        Response<CreateUserResponse> httpResponse = userAPICall.execute();
+        Call<UserResponse> createaUserAPICall = userAPI.createUser(CREDENTIALS,requestBody);
+        Response<UserResponse> httpResponse = createaUserAPICall.execute();
 
         //Check the response
         if(httpResponse.isSuccessful()) {
             System.out.println("Success!!");
-            CreateUserResponse responseBody = httpResponse.body();
-            System.out.println(responseBody.getMetadata().getCode());
-            System.out.println(responseBody.getMetadata().getMessage());
-            System.out.println(responseBody.getMetadata().isSuccess());
+            UserResponse responseBody = httpResponse.body();
+
+
+            String createdUserId = responseBody.getResult().getId();
+            String returnedWebsiteFromCreation = responseBody.getResult().getWebsite();
+
+            Call<UserResponse> getUserAPICall = userAPI.getUserById(CREDENTIALS, createdUserId);
+            Response<UserResponse> httpGetResponse = getUserAPICall.execute();
+            UserResponse getUserResponse = httpGetResponse.body();
+
+            //Test
+            assertEquals(createdUserId, getUserResponse.getResult().getId());
+            assertEquals(returnedWebsiteFromCreation, getUserResponse.getResult().getWebsite());
+
         } else {
+            assertTrue(false);
             System.out.println("Failed!!");
         }
 
@@ -63,9 +77,8 @@ public class CreateUserAPITest {
     private void prepareUserCreationRequest() {
         //Create the request
         requestBody = RequestBody.create(MediaType.parse("application/json"),
-                "{\"first_name\":\"user0\"," +
-                        "\"last_name\":\"user0\"," +
-                        "\"gender\":\"female\"," +
-                        "\"email\":\"user1.s@test.com\"}");
+                "{\"first_name\":\"Electra\",\"last_name\":\"Lele\",\"gender\":\"female\",\"email\":\"user49394.s@test.com\",\"dob\":\"April 9 1979\",\"phone\":\"7428748738\",\"address\":\"Sina 11\",\"website\":\"http://twitter.com\",\"status\":\"active\"}");
+
+
     }
 }
