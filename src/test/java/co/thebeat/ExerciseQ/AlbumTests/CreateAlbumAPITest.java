@@ -47,8 +47,8 @@ public class CreateAlbumAPITest {
         prepareAlbumCreationRequest();
 
         //Execute the request
-        Call<AlbumResponse> albumCall = albumAPI.createAlbum(CREDENTIALS,requestBody);
-        Response<AlbumResponse> createAlbumResponse = albumCall.execute();
+        Call<AlbumResponse> albumAPICall = albumAPI.createAlbum(CREDENTIALS,requestBody);
+        Response<AlbumResponse> createAlbumResponse = albumAPICall.execute();
 
         //Check the response
         if(createAlbumResponse.isSuccessful()) {
@@ -57,8 +57,8 @@ public class CreateAlbumAPITest {
             String createdAlbumId = responseBody.getResult().getId();
             String returnedTitleFromCreation = responseBody.getResult().getTitle();
 
-            albumCall = albumAPI.getAlbumById(CREDENTIALS, createdAlbumId);
-            Response<AlbumResponse> httpResponse = albumCall.execute();
+            albumAPICall = albumAPI.getAlbumById(CREDENTIALS, createdAlbumId);
+            Response<AlbumResponse> httpResponse = albumAPICall.execute();
             AlbumResponse getAlbumResponse = httpResponse.body();
 
             //Test

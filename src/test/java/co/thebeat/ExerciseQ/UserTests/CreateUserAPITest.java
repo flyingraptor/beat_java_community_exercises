@@ -44,8 +44,8 @@ public class CreateUserAPITest {
         prepareUserCreationRequest();
 
         //Execute the request
-        Call<CreateUserResponse> userCall = userAPI.createUser(CREDENTIALS,requestBody);
-        Response<CreateUserResponse> httpResponse = userCall.execute();
+        Call<CreateUserResponse> userAPICall = userAPI.createUser(CREDENTIALS,requestBody);
+        Response<CreateUserResponse> httpResponse = userAPICall.execute();
 
         //Check the response
         if(httpResponse.isSuccessful()) {
