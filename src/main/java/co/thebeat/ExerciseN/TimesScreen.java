@@ -11,9 +11,9 @@ public class TimesScreen {
 
         int userInput;
 
-        do {
+         do {
             showUserOptions();
-            userInput = getUserInput();
+             userInput = getUserInput();
 
             if(userInput < 1 || userInput > 6) {
                 System.out.println("Not acceptable value.");
@@ -71,7 +71,7 @@ public class TimesScreen {
         boolean userInputIsNotANumber;
         int userSelectedOption = 0;
 
-        do {
+         do {
             try {
                 userSelectedOption = consoleInput.nextInt();
                 userInputIsNotANumber = false;
