@@ -47,23 +47,23 @@ public class CreateAlbumAPITest {
         prepareAlbumCreationRequest();
 
         //Execute the request
-        Call<AlbumResponse> albumAPICall = albumAPI.createAlbum(CREDENTIALS,requestBody);
-        Response<AlbumResponse> createAlbumResponse = albumAPICall.execute();
+        Call<CreateAlbumResponse> postAlbumAPICall = albumAPI.createAlbum(CREDENTIALS,requestBody);
+        Response<CreateAlbumResponse> createAlbumResponse = postAlbumAPICall.execute();
 
         //Check the response
         if(createAlbumResponse.isSuccessful()) {
             System.out.println("Success!!");
-            AlbumResponse responseBody = createAlbumResponse.body();
+            CreateAlbumResponse responseBody = createAlbumResponse.body();
             String createdAlbumId = responseBody.getResult().getId();
             String returnedTitleFromCreation = responseBody.getResult().getTitle();
 
-            albumAPICall = albumAPI.getAlbumById(CREDENTIALS, createdAlbumId);
-            Response<AlbumResponse> httpResponse = albumAPICall.execute();
-            AlbumResponse getAlbumResponse = httpResponse.body();
+            Call<GetSingleAlbumResponse> getAlbumAPICall = albumAPI.getAlbumById(CREDENTIALS, createdAlbumId);
+            Response<GetSingleAlbumResponse> httpResponse = getAlbumAPICall.execute();
+            GetSingleAlbumResponse getCreateAlbumResponse = httpResponse.body();
 
             //Test
-            assertEquals(createdAlbumId, getAlbumResponse.getResult().getId());
-            assertEquals(returnedTitleFromCreation, getAlbumResponse.getResult().getTitle());
+            assertEquals(createdAlbumId, getCreateAlbumResponse.getResult().getId());
+            assertEquals(returnedTitleFromCreation, getCreateAlbumResponse.getResult().getTitle());
 
         } else {
             assertTrue(false);

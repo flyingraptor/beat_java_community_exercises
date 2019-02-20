@@ -47,25 +47,25 @@ public class CreateUserAPITest {
         prepareUserCreationRequest();
 
         //Execute the request
-        Call<UserResponse> createaUserAPICall = userAPI.createUser(CREDENTIALS,requestBody);
-        Response<UserResponse> httpResponse = createaUserAPICall.execute();
+        Call<CreateUserResponse> createaUserAPICall = userAPI.createUser(CREDENTIALS,requestBody);
+        Response<CreateUserResponse> httpResponse = createaUserAPICall.execute();
 
         //Check the response
         if(httpResponse.isSuccessful()) {
             System.out.println("Success!!");
-            UserResponse responseBody = httpResponse.body();
+            CreateUserResponse responseBody = httpResponse.body();
 
 
             String createdUserId = responseBody.getResult().getId();
             String returnedWebsiteFromCreation = responseBody.getResult().getWebsite();
 
-            Call<UserResponse> getUserAPICall = userAPI.getUserById(CREDENTIALS, createdUserId);
-            Response<UserResponse> httpGetResponse = getUserAPICall.execute();
-            UserResponse getUserResponse = httpGetResponse.body();
+            Call<GetSingleUserResponse> getUserAPICall = userAPI.getUserById(CREDENTIALS, createdUserId);
+            Response<GetSingleUserResponse> httpGetResponse = getUserAPICall.execute();
+            GetSingleUserResponse getCreateUserResponse = httpGetResponse.body();
 
             //Test
-            assertEquals(createdUserId, getUserResponse.getResult().getId());
-            assertEquals(returnedWebsiteFromCreation, getUserResponse.getResult().getWebsite());
+            assertEquals(createdUserId, getCreateUserResponse.getResult().getId());
+            assertEquals(returnedWebsiteFromCreation, getCreateUserResponse.getResult().getWebsite());
 
         } else {
             assertTrue(false);
@@ -77,7 +77,7 @@ public class CreateUserAPITest {
     private void prepareUserCreationRequest() {
         //Create the request
         requestBody = RequestBody.create(MediaType.parse("application/json"),
-                "{\"first_name\":\"Electra\",\"last_name\":\"Lele\",\"gender\":\"female\",\"email\":\"user49394.s@test.com\",\"dob\":\"April 9 1979\",\"phone\":\"7428748738\",\"address\":\"Sina 11\",\"website\":\"http://twitter.com\",\"status\":\"active\"}");
+                "{\"first_name\":\"Electra\",\"last_name\":\"Lele\",\"gender\":\"female\",\"email\":\"user49874.s@test.com\",\"dob\":\"April 9 1979\",\"phone\":\"7428748738\",\"address\":\"Sina 11\",\"website\":\"http://twitter.com\",\"status\":\"active\"}");
 
 
     }
