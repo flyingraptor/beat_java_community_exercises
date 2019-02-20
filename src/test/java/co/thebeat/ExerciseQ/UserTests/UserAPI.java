@@ -16,6 +16,6 @@ public interface UserAPI {
 
     @GET("public-api/users")
     Call<GetFilteredByNameResponse> getUserByName(@Header("Authorization") String authorizationHeader,
-                                         @Query("niko") String userName);
+                                         @Query("name") String userName);
 }
 

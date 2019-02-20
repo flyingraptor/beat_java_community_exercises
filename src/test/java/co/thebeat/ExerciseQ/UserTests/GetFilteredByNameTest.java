@@ -6,6 +6,7 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import okhttp3.MediaType;
 import okhttp3.RequestBody;
+import org.apache.commons.lang3.StringUtils;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import retrofit2.Call;
@@ -50,7 +51,7 @@ public class GetFilteredByNameTest {
 
 
         //Execute the request
-        Call<GetFilteredByNameResponse> getFilteredByNameAPICall = userAPI.getUserByName(CREDENTIALS, "Niko");
+        Call<GetFilteredByNameResponse> getFilteredByNameAPICall = userAPI.getUserByName(CREDENTIALS, "niko");
         Response<GetFilteredByNameResponse> returnUsersResponse = getFilteredByNameAPICall.execute();
 
         //Check the response
@@ -68,16 +69,17 @@ public class GetFilteredByNameTest {
             //Check that every result contains name with niko
             for (int i = 0; i < result.size(); i++) {
                 String name = result.get(i).getName();
-                name = name.toLowerCase();
 
-                if (!name.contains("Niko")) {
+
+                if (!StringUtils.containsIgnoreCase(name, "NiKo")) {
                     assertTrue(false);
-
-                } else {
-                assertTrue(false);
+                }
             }
-
-        }}}}
+        } else {
+            assertTrue(false);
+        }
+    }
+}
 
 
 
