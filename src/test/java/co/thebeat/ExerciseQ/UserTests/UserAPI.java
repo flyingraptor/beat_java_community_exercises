@@ -13,5 +13,9 @@ public interface UserAPI {
     @GET("public-api/users/{user_id}")
     Call<GetSingleUserResponse> getUserById(@Header("Authorization") String authorizationHeader,
                                          @Path("user_id") String userId);
+
+    @GET("public-api/users")
+    Call<GetFilteredByNameResponse> getUserByName(@Header("Authorization") String authorizationHeader,
+                                         @Query("niko") String userName);
 }
 
