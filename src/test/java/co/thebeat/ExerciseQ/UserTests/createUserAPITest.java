@@ -13,6 +13,9 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 import java.io.IOException;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 public class CreateUserAPITest {
 
     private Retrofit retrofitClient;
@@ -38,6 +41,28 @@ public class CreateUserAPITest {
         userAPI = retrofitClient.create(UserAPI.class);
     }
 
+//    @Test
+//    public void testCreateUser() throws IOException {
+//
+//        prepareUserCreationRequest();
+//
+//        //Execute the request
+//        Call<CreateUserResponse> userAPICall = userAPI.createUser(CREDENTIALS,requestBody);
+//        Response<CreateUserResponse> httpResponse = userAPICall.execute();
+//
+//        //Check the response
+//        if(httpResponse.isSuccessful()) {
+//            System.out.println("Success!!");
+//            CreateUserResponse responseBody = httpResponse.body();
+//            System.out.println(responseBody.getMetadata().getCode());
+//            System.out.println(responseBody.getMetadata().getMessage());
+//            System.out.println(responseBody.getMetadata().isSuccess());
+//        } else {
+//            System.out.println("Failed!!");
+//        }
+//
+//    }
+
     @Test
     public void testCreateUser() throws IOException {
 
@@ -45,27 +70,33 @@ public class CreateUserAPITest {
 
         //Execute the request
         Call<CreateUserResponse> userAPICall = userAPI.createUser(CREDENTIALS,requestBody);
-        Response<CreateUserResponse> httpResponse = userAPICall.execute();
+        Response<CreateUserResponse> createUserResponse = userAPICall.execute();
+
+        CreateUserResponse responseBody = createUserResponse.body();
+
 
         //Check the response
-        if(httpResponse.isSuccessful()) {
+        if(createUserResponse.isSuccessful()) {
             System.out.println("Success!!");
-            CreateUserResponse responseBody = httpResponse.body();
-            System.out.println(responseBody.getMetadata().getCode());
-            System.out.println(responseBody.getMetadata().getMessage());
-            System.out.println(responseBody.getMetadata().isSuccess());
+            String createdUserId = responseBody.getResult().getId();
+            String returnedIdFromCreation = responseBody.getResult().getId();
+
+           Call<CreateUserResponse> getUserAPICall = userAPI.getUserById(CREDENTIALS, createdUserId);
+            Response<CreateUserResponse> httpResponse = getUserAPICall.execute();
+            CreateUserResponse getUserResponse = httpResponse.body();
+
+            //Test
+            assertEquals(createdUserId, getUserResponse.getResult().getId());
+            assertEquals(returnedIdFromCreation, getUserResponse.getResult().getId());
+
         } else {
-            System.out.println("Failed!!");
+            assertTrue(false);
         }
 
     }
 
     private void prepareUserCreationRequest() {
         //Create the request
-        requestBody = RequestBody.create(MediaType.parse("application/json"),
-                "{\"first_name\":\"user0\"," +
-                        "\"last_name\":\"user0\"," +
-                        "\"gender\":\"female\"," +
-                        "\"email\":\"user1.s@test.com\"}");
+        requestBody = RequestBody.create(MediaType.parse("application/json"),"{\"first_name\":\"Galatea Georgallis\",\"last_name\":\"Galatea Georgallis\",\"gender\":\"female\",\"dob\":\"16/03/99\",\"email\":\"galateiae90rreeeee000001@gmail.com\",\"phone\":\"8888999900\",\"website\":\"https://www.google.com\",\"address\":\"Manhattanos 19\",\"status\":\"active\"}");
     }
 }
