@@ -22,7 +22,7 @@ public class CreateAlbumAPITest {
 
     private RequestBody requestBody;
 
-    private AlbumAPI albumAPI;
+    private CreateAlbumAPI albumAPI;
 
     private static final String CREDENTIALS = "Basic QVBRRVV4UkZMVjk5d3RJYnFNU3dnMlZBeVlMR1hQdThqWWdUOg==";
 
@@ -38,7 +38,7 @@ public class CreateAlbumAPITest {
         retrofitClientBuilder.baseUrl("https://gorest.co.in");
         retrofitClientBuilder.addConverterFactory(gsonConverterFactory);
         retrofitClient = retrofitClientBuilder.build();
-        albumAPI = retrofitClient.create(AlbumAPI.class);
+        albumAPI = retrofitClient.create(CreateAlbumAPI.class);
     }
 
     @Test
@@ -47,19 +47,19 @@ public class CreateAlbumAPITest {
         prepareAlbumCreationRequest();
 
         //Execute the request
-        Call<AlbumResponse> albumAPICall = albumAPI.createAlbum(CREDENTIALS,requestBody);
-        Response<AlbumResponse> createAlbumResponse = albumAPICall.execute();
+        Call<CreateAlbumResponse> albumAPICall = albumAPI.createAlbum(CREDENTIALS,requestBody);
+        Response<CreateAlbumResponse> createAlbumResponse = albumAPICall.execute();
 
         //Check the response
         if(createAlbumResponse.isSuccessful()) {
             System.out.println("Success!!");
-            AlbumResponse responseBody = createAlbumResponse.body();
+            CreateAlbumResponse responseBody = createAlbumResponse.body();
             String createdAlbumId = responseBody.getResult().getId();
             String returnedTitleFromCreation = responseBody.getResult().getTitle();
 
-            albumAPICall = albumAPI.getAlbumById(CREDENTIALS, createdAlbumId);
-            Response<AlbumResponse> httpResponse = albumAPICall.execute();
-            AlbumResponse getAlbumResponse = httpResponse.body();
+            Call<GetSingleAlbumResponse> getalbumAPICall = albumAPI.getAlbumById(CREDENTIALS, createdAlbumId);
+            Response<GetSingleAlbumResponse> httpResponse = getalbumAPICall.execute();
+            GetSingleAlbumResponse getAlbumResponse = httpResponse.body();
 
             //Test
             assertEquals(createdAlbumId, getAlbumResponse.getResult().getId());

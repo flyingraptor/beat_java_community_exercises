@@ -4,6 +4,7 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import okhttp3.MediaType;
 import okhttp3.RequestBody;
+import org.apache.commons.lang3.StringUtils;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import retrofit2.Call;
@@ -12,6 +13,8 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 import java.io.IOException;
+import java.sql.SQLOutput;
+import java.util.ArrayList;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -70,7 +73,7 @@ public class CreateUserAPITest {
 
         //Execute the request
         Call<CreateUserResponse> userAPICall = userAPI.createUser(CREDENTIALS,requestBody);
-        Response<CreateUserResponse> createUserResponse = userAPICall.execute();
+       Response<CreateUserResponse> createUserResponse = userAPICall.execute();
 
         CreateUserResponse responseBody = createUserResponse.body();
 
@@ -81,9 +84,9 @@ public class CreateUserAPITest {
             String createdUserId = responseBody.getResult().getId();
             String returnedIdFromCreation = responseBody.getResult().getId();
 
-           Call<CreateUserResponse> getUserAPICall = userAPI.getUserById(CREDENTIALS, createdUserId);
-            Response<CreateUserResponse> httpResponse = getUserAPICall.execute();
-            CreateUserResponse getUserResponse = httpResponse.body();
+           Call<GetSingleUserResponse> getUserAPICall = userAPI.getUserById(CREDENTIALS, createdUserId);
+            Response<GetSingleUserResponse> httpResponse = getUserAPICall.execute();
+           GetSingleUserResponse getUserResponse = httpResponse.body();
 
             //Test
             assertEquals(createdUserId, getUserResponse.getResult().getId());
@@ -95,8 +98,11 @@ public class CreateUserAPITest {
 
     }
 
+
+
     private void prepareUserCreationRequest() {
         //Create the request
-        requestBody = RequestBody.create(MediaType.parse("application/json"),"{\"first_name\":\"Galatea Georgallis\",\"last_name\":\"Galatea Georgallis\",\"gender\":\"female\",\"dob\":\"16/03/99\",\"email\":\"galateiae90rreeeee000001@gmail.com\",\"phone\":\"8888999900\",\"website\":\"https://www.google.com\",\"address\":\"Manhattanos 19\",\"status\":\"active\"}");
+        requestBody = RequestBody.create(MediaType.parse("application/json"),"{\"first_name\":\"Galatea Georgallis\",\"last_name\":\"Galatea Georgallis\",\"gender\":\"female\",\"dob\":\"16/03/99\",\"email\":\"galateiae90rrseeeee000001@gmail.com\",\"phone\":\"8888999900\",\"website\":\"https://www.google.com\",\"address\":\"Manhattanos 19\",\"status\":\"active\"}");
+
     }
 }

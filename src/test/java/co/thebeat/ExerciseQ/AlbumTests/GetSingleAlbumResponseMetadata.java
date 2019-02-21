@@ -1,6 +1,6 @@
 package co.thebeat.ExerciseQ.AlbumTests;
 
-public class AlbumResponseMetadata {
+public class GetSingleAlbumResponseMetadata {
 
     private boolean success;
 
