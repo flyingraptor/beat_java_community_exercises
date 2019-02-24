@@ -12,6 +12,10 @@ public interface UserAPI {
                                         @Body RequestBody requestBody);
 
     @GET("public-api/users/{user_id}")
-    Call<CreateUserResponse> getUserById(@Header("Authorization") String authorizationHeader,
+    Call<GetSingleUserResponse> getUserById(@Header("Authorization") String authorizationHeader,
                                      @Path("user_id") String id);
+
+    @GET("public-api/users")
+    Call<GetMultiUsersResponse> getUserFilteredByName(@Header("Authorization") String authorizationHeader,
+                                            @Query("name") String name);
 }
