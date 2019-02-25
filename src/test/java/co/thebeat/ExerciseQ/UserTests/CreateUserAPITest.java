@@ -75,6 +75,6 @@ public class CreateUserAPITest {
 
     private void prepareUserCreationRequest() {
         //Create the request
-        requestBody = RequestBody.create(MediaType.parse("application/json"),"{\"first_name\":\"Galatea Georgallis\",\"last_name\":\"Galatea Georgallis\",\"gender\":\"female\",\"dob\":\"16/03/99\",\"email\":\"galateiae92rreeeee000001@gmail.com\",\"phone\":\"8888999900\",\"website\":\"https://www.google.com\",\"address\":\"Manhattanos 19\",\"status\":\"active\"}");
+        requestBody = RequestBody.create(MediaType.parse("application/json"),"{\"first_name\":\"Galatea Georgallis\",\"last_name\":\"Galatea Georgallis\",\"gender\":\"female\",\"dob\":\"16/03/99\",\"email\":\"galateiae92rreeeee00000122@gmail.com\",\"phone\":\"8888999900\",\"website\":\"https://www.google.com\",\"address\":\"Manhattanos 19\",\"status\":\"active\"}");
     }
 }
