@@ -1,6 +1,7 @@
-package co.thebeat.ExerciseQ.UserTests;
+package co.thebeat.ExerciseQ.UserTests.Read;
 
-public class GetSingleUserResponseResult {
+public class GetFilteredByNameResponseResult {
+
 
         private String id;
 
@@ -19,6 +20,8 @@ public class GetSingleUserResponseResult {
         private String address;
 
         private String status;
+
+
 
         public String getDob() {
             return dob;
@@ -54,6 +57,7 @@ public class GetSingleUserResponseResult {
 
         public String getStatus() {
             return status;
+
         }
 
         public void setGender(String gender) {
@@ -92,5 +96,4 @@ public class GetSingleUserResponseResult {
             this.status = status;
         }
     }
-
 

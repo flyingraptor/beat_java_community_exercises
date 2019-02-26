@@ -1,6 +1,6 @@
-package co.thebeat.ExerciseQ.UserTests;
+package co.thebeat.ExerciseQ.AlbumTests.Create;
 
-public class GetFilteredByNameResponseMetadata {
+public class CreateAlbumResponseMetadata {
 
     private boolean success;
 

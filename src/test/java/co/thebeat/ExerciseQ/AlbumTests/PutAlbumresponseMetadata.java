@@ -1,6 +1,7 @@
-package co.thebeat.ExerciseQ.UserTests;
+package co.thebeat.ExerciseQ.AlbumTests;
 
-public class CreateUserResponseMetadata {
+public class PutAlbumresponseMetadata {
+
 
     private boolean success;
 
@@ -32,3 +33,5 @@ public class CreateUserResponseMetadata {
         this.success = success;
     }
 }
+
+

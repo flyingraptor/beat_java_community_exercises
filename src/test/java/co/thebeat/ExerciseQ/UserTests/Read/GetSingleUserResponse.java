@@ -1,4 +1,4 @@
-package co.thebeat.ExerciseQ.UserTests;
+package co.thebeat.ExerciseQ.UserTests.Read;
 
 import com.google.gson.annotations.SerializedName;
 

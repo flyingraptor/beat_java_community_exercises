@@ -1,10 +1,10 @@
 package co.thebeat.ExerciseQ.UserTests;
 
 
-import co.thebeat.ExerciseQ.AlbumTests.GetSingleAlbumResponseResult;
+import co.thebeat.ExerciseQ.UserTests.Read.GetFilteredByNameResponse;
+import co.thebeat.ExerciseQ.UserTests.Read.GetFilteredByNameResponseResult;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import okhttp3.MediaType;
 import okhttp3.RequestBody;
 import org.apache.commons.lang3.StringUtils;
 import org.junit.jupiter.api.BeforeEach;
@@ -13,7 +13,6 @@ import retrofit2.Call;
 import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
-import retrofit2.http.Query;
 
 import java.io.IOException;
 import java.util.ArrayList;

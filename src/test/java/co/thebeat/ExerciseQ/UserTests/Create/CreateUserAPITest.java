@@ -1,5 +1,7 @@
-package co.thebeat.ExerciseQ.UserTests;
+package co.thebeat.ExerciseQ.UserTests.Create;
 
+import co.thebeat.ExerciseQ.UserTests.Read.GetSingleUserResponse;
+import co.thebeat.ExerciseQ.UserTests.UserAPI;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import okhttp3.MediaType;
