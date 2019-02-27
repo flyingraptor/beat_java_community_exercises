@@ -60,8 +60,8 @@ public class UpdateAlbumAPITest {
         prepareAlbumUpdateRequest();
 
         //Execute the PUT request
-        Call<PutAlbumResponse> upadateAlbumAPICall = albumAPI.updateAlbum(CREDENTIALS, requestBody, createdAlbumId);
-        Response<PutAlbumResponse> putAlbumResponse = upadateAlbumAPICall.execute();
+        Call<PutAlbumResponse> updateAlbumAPICall = albumAPI.updateAlbum(CREDENTIALS, requestBody, createdAlbumId);
+        Response<PutAlbumResponse> putAlbumResponse = updateAlbumAPICall.execute();
 
 
         //Check the PUT response

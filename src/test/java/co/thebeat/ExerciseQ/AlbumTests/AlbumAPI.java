@@ -18,6 +18,6 @@ public interface AlbumAPI {
 
     @PUT("public-api/albums/{album_id}")
     Call<PutAlbumResponse> updateAlbum(@Header("Authorization") String authorizationHeader,
-                                       @Body RequestBody resquestBody,
+                                       @Body RequestBody requestBody,
                                        @Path("album_id") String albumId);
 }
