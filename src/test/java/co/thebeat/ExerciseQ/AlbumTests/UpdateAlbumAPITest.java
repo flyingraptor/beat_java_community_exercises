@@ -1,13 +1,13 @@
 package co.thebeat.ExerciseQ.AlbumTests;
 
-import co.thebeat.ExerciseQ.AlbumTests.AlbumAPI;
 import co.thebeat.ExerciseQ.AlbumTests.Read.GetSingleAlbumResponse;
 import co.thebeat.ExerciseQ.AlbumTests.Create.CreateAlbumResponse;
+import co.thebeat.ExerciseQ.AlbumTests.Update.PutAlbumResponse;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import okhttp3.MediaType;
 import okhttp3.RequestBody;
-import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import retrofit2.Call;
 import retrofit2.Response;
@@ -21,18 +21,17 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class UpdateAlbumAPITest {
 
-    private Retrofit retrofitClient;
+    private static Retrofit retrofitClient;
 
     private RequestBody requestBody;
 
-    private AlbumAPI albumAPI;
+    private static AlbumAPI albumAPI;
 
     private String createdAlbumId;
 
-    private static final String CREDENTIALS = "Basic QVBRRVV4UkZMVjk5d3RJYnFNU3dnMlZBeVlMR1hQdThqWWdUOg==";
 
-    @BeforeEach
-    public void before() {
+    @BeforeAll
+    public static void before() {
         //Initialize json converter using gson lib
         GsonBuilder gsonBuilder = new GsonBuilder();
         Gson gson = gsonBuilder.create();
@@ -52,8 +51,8 @@ public class UpdateAlbumAPITest {
 
         prepareAlbumCreationRequest();
 
-        //Execute the request
-        Call<CreateAlbumResponse> postAlbumAPICall = albumAPI.createAlbum(CREDENTIALS, requestBody);
+        //Execute the CREATE request
+        Call<CreateAlbumResponse> postAlbumAPICall = albumAPI.createAlbum(requestBody);
         Response<CreateAlbumResponse> createAlbumResponse = postAlbumAPICall.execute();
         CreateAlbumResponse createResponseBody = createAlbumResponse.body();
         createdAlbumId = createResponseBody.getResult().getId();
@@ -62,7 +61,7 @@ public class UpdateAlbumAPITest {
         prepareAlbumUpdateRequest();
 
         //Execute the PUT request
-        Call<PutAlbumResponse> upadateAlbumAPICall = albumAPI.updateAlbum(CREDENTIALS, requestBody, createdAlbumId);
+        Call<PutAlbumResponse> upadateAlbumAPICall = albumAPI.updateAlbum(requestBody, createdAlbumId);
         Response<PutAlbumResponse> putAlbumResponse = upadateAlbumAPICall.execute();
 
 
@@ -73,7 +72,7 @@ public class UpdateAlbumAPITest {
             String updatedAlbumId = responseBody.getResult().getId();
             String returnedTitleFromUpdate = responseBody.getResult().getTitle();
 
-            Call<GetSingleAlbumResponse> getAlbumAPICall = albumAPI.getAlbumById(CREDENTIALS, updatedAlbumId);
+            Call<GetSingleAlbumResponse> getAlbumAPICall = albumAPI.getAlbumById(updatedAlbumId);
             Response<GetSingleAlbumResponse> httpResponse = getAlbumAPICall.execute();
             GetSingleAlbumResponse getPutAlbumResponse = httpResponse.body();
 
@@ -95,7 +94,6 @@ public class UpdateAlbumAPITest {
 
     private void prepareAlbumUpdateRequest() {
         //Create the request
-
         requestBody = RequestBody.create(MediaType.parse("application/json"),
                 "{\"user_id\":\"1224\"," +
                         "\"title\":\"album title2\"}");

@@ -1,4 +1,4 @@
-package co.thebeat.ExerciseQ.AlbumTests;
+package co.thebeat.ExerciseQ.AlbumTests.Update;
 
 public class PutAlbumResponseResult {
 

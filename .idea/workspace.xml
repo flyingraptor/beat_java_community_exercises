@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7902fa1f-85ad-47d2-ba5c-8d7224713840" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseQ/AlbumTests/UpdateAlbumAPITest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseQ/AlbumTests/DeleteAlbumAPITest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseQ/AlbumTests/DeleteAlbumResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseQ/AlbumTests/DeleteAlbumResponseMetadata.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseQ/AlbumTests/DeleteAlbumResponseResult.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseQ/AlbumTests/AlbumAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseQ/AlbumTests/AlbumAPI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseQ/AlbumTests/CreateAlbumAPITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseQ/AlbumTests/CreateAlbumAPITest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseQ/AlbumTests/PutAlbumResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseQ/AlbumTests/PutAlbumResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseQ/AlbumTests/UpdateAlbumAPITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseQ/AlbumTests/UpdateAlbumAPITest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -17,11 +22,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseQ/AlbumTests/AlbumAPI.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseQ/AlbumTests/DeleteAlbumAPITest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
+            <state relative-caret-position="298">
+              <caret line="66" column="19" lean-forward="true" selection-start-line="66" selection-start-column="19" selection-end-line="66" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -30,19 +35,49 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseQ/AlbumTests/CreateAlbumAPITest.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseQ/AlbumTests/DeleteAlbumResponseResult.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="61" column="62" lean-forward="true" selection-start-line="60" selection-start-column="12" selection-end-line="61" selection-end-column="62" />
+            <state relative-caret-position="-161">
+              <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseQ/AlbumTests/DeleteAlbumResponse.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseQ/AlbumTests/UpdateAlbumAPITest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="81" column="32" selection-start-line="81" selection-start-column="32" selection-end-line="81" selection-end-column="32" />
+            <state relative-caret-position="282">
+              <caret line="83" column="9" selection-start-line="83" selection-start-column="9" selection-end-line="83" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseQ/AlbumTests/PutAlbumResponse.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseQ/AlbumTests/AlbumAPI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="236">
+              <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -70,11 +105,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/thebeat/co/ExerciseG/DummyClass1.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/thebeat/co/ExerciseG/DummyClass1Test.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/thebeat/co/ExerciseG/DummyClass2Test.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/thebeat/co/ExerciseG/DummyClass2.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/thebeat/co/ExerciseG/DummyClass3.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/thebeat/co/ExerciseG/DummyClass4Test.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/thebeat/co/ExerciseG/DummyClass3Test.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/thebeat/co/ExerciseG/DummyClass4.java" />
@@ -118,8 +148,14 @@
         <option value="$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseQ/UserTests/GetFilteredByNameTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseQ/UserTests/Create/CreateUserAPITest.java" />
         <option value="$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseQ/AlbumTests/AlbumAPI.java" />
+        <option value="$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseQ/AlbumTests/PutAlbumResponse.java" />
+        <option value="$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseQ/AlbumTests/DeleteAlbumResponseMetadata.java" />
+        <option value="$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseQ/AlbumTests/DeletelbumResponseResult.java" />
+        <option value="$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseQ/AlbumTests/DeleteAlbumResponseResult.java" />
+        <option value="$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseQ/AlbumTests/DeleteAlbumResponse.java" />
         <option value="$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseQ/AlbumTests/CreateAlbumAPITest.java" />
         <option value="$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseQ/AlbumTests/UpdateAlbumAPITest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseQ/AlbumTests/DeleteAlbumAPITest.java" />
       </list>
     </option>
   </component>
@@ -250,29 +286,6 @@
               <item name="ExerciseQ" type="462c0819:PsiDirectoryNode" />
               <item name="AlbumTests" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="beat_java_community_exercises" type="b2602c69:ProjectViewProjectNode" />
-              <item name="beat_java_community_exercises" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="co" type="462c0819:PsiDirectoryNode" />
-              <item name="thebeat" type="462c0819:PsiDirectoryNode" />
-              <item name="ExerciseQ" type="462c0819:PsiDirectoryNode" />
-              <item name="AlbumTests" type="462c0819:PsiDirectoryNode" />
-              <item name="Read" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="beat_java_community_exercises" type="b2602c69:ProjectViewProjectNode" />
-              <item name="beat_java_community_exercises" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="co" type="462c0819:PsiDirectoryNode" />
-              <item name="thebeat" type="462c0819:PsiDirectoryNode" />
-              <item name="ExerciseQ" type="462c0819:PsiDirectoryNode" />
-              <item name="UserTests" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -281,7 +294,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551286730690" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551291197002" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -309,27 +322,12 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UpdateAlbumAPITest.testPutAlbum">
-    <configuration name="CreateAlbumAPITest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="beat_java_community_exercises" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="co.thebeat.ExerciseQ.AlbumTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="co.thebeat.ExerciseQ.AlbumTests" />
-      <option name="MAIN_CLASS_NAME" value="co.thebeat.ExerciseQ.AlbumTests.CreateAlbumAPITest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.DeleteAlbumAPITest.testDeleteAlbum">
     <configuration name="CreateAlbumAPITest.testCreateAlbum" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="beat_java_community_exercises" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="co.thebeat.ExerciseQ.AlbumTests.*" />
+          <option name="PATTERN" value="co.thebeat.ExerciseQ.AlbumTests.Delete.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -341,18 +339,49 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CreateAlbumAPITest.testPutAlbum" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DeleteAlbumAPITest.testDeleteAlbum" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="beat_java_community_exercises" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="co.thebeat.ExerciseQ.AlbumTests.*" />
+          <option name="PATTERN" value="co.thebeat.ExerciseQ.AlbumTests.Delete.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="co.thebeat.ExerciseQ.AlbumTests" />
-      <option name="MAIN_CLASS_NAME" value="co.thebeat.ExerciseQ.AlbumTests.CreateAlbumAPITest" />
+      <option name="MAIN_CLASS_NAME" value="co.thebeat.ExerciseQ.AlbumTests.DeleteAlbumAPITest" />
+      <option name="METHOD_NAME" value="testDeleteAlbum" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DeleteAlbumAPITest.testPutAlbum" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="beat_java_community_exercises" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="co.thebeat.ExerciseQ.AlbumTests.Delete.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="co.thebeat.ExerciseQ.AlbumTests" />
+      <option name="MAIN_CLASS_NAME" value="co.thebeat.ExerciseQ.AlbumTests.DeleteAlbumAPITest" />
       <option name="METHOD_NAME" value="testPutAlbum" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UpdateAlbumAPITest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="beat_java_community_exercises" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="co.thebeat.ExerciseQ.AlbumTests.Delete.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="co.thebeat.ExerciseQ.AlbumTests" />
+      <option name="MAIN_CLASS_NAME" value="co.thebeat.ExerciseQ.AlbumTests.UpdateAlbumAPITest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -361,7 +390,7 @@
       <module name="beat_java_community_exercises" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="co.thebeat.ExerciseQ.AlbumTests.*" />
+          <option name="PATTERN" value="co.thebeat.ExerciseQ.AlbumTests.Delete.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -373,34 +402,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="co.thebeat.ExerciseQ.AlbumTests.Create in beat_java_community_exercises" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="beat_java_community_exercises" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="co.thebeat.ExerciseQ.AlbumTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="co.thebeat.ExerciseQ.AlbumTests.Create" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="JUnit.co.thebeat.ExerciseQ.AlbumTests.Create in beat_java_community_exercises" />
       <item itemvalue="JUnit.CreateAlbumAPITest.testCreateAlbum" />
-      <item itemvalue="JUnit.CreateAlbumAPITest" />
-      <item itemvalue="JUnit.CreateAlbumAPITest.testPutAlbum" />
       <item itemvalue="JUnit.UpdateAlbumAPITest.testPutAlbum" />
+      <item itemvalue="JUnit.UpdateAlbumAPITest" />
+      <item itemvalue="JUnit.DeleteAlbumAPITest.testPutAlbum" />
+      <item itemvalue="JUnit.DeleteAlbumAPITest.testDeleteAlbum" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DeleteAlbumAPITest.testDeleteAlbum" />
+        <item itemvalue="JUnit.DeleteAlbumAPITest.testPutAlbum" />
         <item itemvalue="JUnit.UpdateAlbumAPITest.testPutAlbum" />
-        <item itemvalue="JUnit.CreateAlbumAPITest.testPutAlbum" />
         <item itemvalue="JUnit.CreateAlbumAPITest.testCreateAlbum" />
-        <item itemvalue="JUnit.CreateAlbumAPITest" />
-        <item itemvalue="JUnit.co.thebeat.ExerciseQ.AlbumTests.Create in beat_java_community_exercises" />
+        <item itemvalue="JUnit.UpdateAlbumAPITest" />
       </list>
     </recent_temporary>
   </component>
@@ -464,39 +479,46 @@
       <option name="project" value="LOCAL" />
       <updated>1550688337998</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="PUT exercise solution">
+      <created>1551286794791</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1551286794791</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CreateAlbumAPITest_testCreateAlbum - 2019.02.27 at 10h 09m 08s.xml">
-      <configuration name="CreateAlbumAPITest.testCreateAlbum" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CreateAlbumAPITest_testCreateAlbum - 2019.02.27 at 10h 10m 01s.xml">
-      <configuration name="CreateAlbumAPITest.testCreateAlbum" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CreateAlbumAPITest_testPutAlbum - 2019.02.27 at 10h 10m 13s.xml">
-      <configuration name="CreateAlbumAPITest.testPutAlbum" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CreateAlbumAPITest_testPutAlbum - 2019.02.27 at 10h 12m 43s.xml">
-      <configuration name="CreateAlbumAPITest.testPutAlbum" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CreateAlbumAPITest_testPutAlbum - 2019.02.27 at 10h 16m 28s.xml">
-      <configuration name="CreateAlbumAPITest.testPutAlbum" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CreateAlbumAPITest_testPutAlbum - 2019.02.27 at 10h 16m 31s.xml">
-      <configuration name="CreateAlbumAPITest.testPutAlbum" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CreateAlbumAPITest_testPutAlbum - 2019.02.27 at 10h 48m 25s.xml">
-      <configuration name="CreateAlbumAPITest.testPutAlbum" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CreateAlbumAPITest_testPutAlbum - 2019.02.27 at 10h 48m 34s.xml">
-      <configuration name="CreateAlbumAPITest.testPutAlbum" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CreateAlbumAPITest_testPutAlbum - 2019.02.27 at 10h 53m 23s.xml">
-      <configuration name="CreateAlbumAPITest.testPutAlbum" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CreateAlbumAPITest_testPutAlbum - 2019.02.27 at 10h 53m 40s.xml">
       <configuration name="CreateAlbumAPITest.testPutAlbum" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UpdateAlbumAPITest_testPutAlbum - 2019.02.27 at 18h 58m 34s.xml">
+      <configuration name="UpdateAlbumAPITest.testPutAlbum" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UpdateAlbumAPITest_testPutAlbum - 2019.02.27 at 18h 59m 00s.xml">
+      <configuration name="UpdateAlbumAPITest.testPutAlbum" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UpdateAlbumAPITest - 2019.02.27 at 19h 01m 27s.xml">
+      <configuration name="UpdateAlbumAPITest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UpdateAlbumAPITest_testPutAlbum - 2019.02.27 at 19h 06m 58s.xml">
+      <configuration name="UpdateAlbumAPITest.testPutAlbum" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UpdateAlbumAPITest_testPutAlbum - 2019.02.27 at 19h 15m 17s.xml">
+      <configuration name="UpdateAlbumAPITest.testPutAlbum" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DeleteAlbumAPITest_testPutAlbum - 2019.02.27 at 19h 57m 32s.xml">
+      <configuration name="DeleteAlbumAPITest.testPutAlbum" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DeleteAlbumAPITest_testDeleteAlbum - 2019.02.27 at 20h 01m 45s.xml">
+      <configuration name="DeleteAlbumAPITest.testDeleteAlbum" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DeleteAlbumAPITest_testDeleteAlbum - 2019.02.27 at 20h 08m 57s.xml">
+      <configuration name="DeleteAlbumAPITest.testDeleteAlbum" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DeleteAlbumAPITest_testDeleteAlbum - 2019.02.27 at 20h 10m 05s.xml">
+      <configuration name="DeleteAlbumAPITest.testDeleteAlbum" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -512,7 +534,7 @@
     <frame x="0" y="23" width="1440" height="839" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2825465" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2825465" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -521,7 +543,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49785408" weight="0.37041035" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49785408" visible="true" weight="0.3694779" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39740822" />
       <window_info anchor="bottom" id="Terminal" order="4" weight="0.329718" />
       <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.50214595" side_tool="true" weight="0.45917" />
@@ -580,19 +602,10 @@
     <MESSAGE value="added getSingleUSerResponse" />
     <MESSAGE value="GetfilteredByNameTest added" />
     <MESSAGE value="PUT exercise attempt" />
-    <option name="LAST_COMMIT_MESSAGE" value="PUT exercise attempt" />
+    <MESSAGE value="PUT exercise solution" />
+    <option name="LAST_COMMIT_MESSAGE" value="PUT exercise solution" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/co/thebeat/ExerciseJ/Square.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/co/thebeat/ExerciseJ/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/co/thebeat/ExerciseJ/MainJ.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/co/thebeat/ExerciseN/Days.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/co/thebeat/ExerciseO/Main.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/co/thebeat/ExerciseN/DaysScreen.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/co/thebeat/ExerciseN/InitialScreen.java" />
@@ -680,13 +693,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseQ/AlbumTests/Read/GetSingleAlbumResponseResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseQ/UserTests/Read/GetFilteredByNameResponseResult.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -760,13 +766,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseQ/AlbumTests/PutAlbumresponseMetadata.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseQ/AlbumTests/Create/CreateAlbumResponseResult.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -801,27 +800,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseQ/AlbumTests/PutAlbumResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="32" column="1" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseQ/UserTests/Create/CreateUserResponse.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseQ/AlbumTests/PutAlbumResponseResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -853,27 +835,89 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseQ/AlbumTests/AlbumAPI.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseQ/AlbumTests/PutAlbumresponseMetadata.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
+        <state relative-caret-position="379">
+          <caret line="36" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseQ/AlbumTests/DeleteAlbumResponseMetadata.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseQ/AlbumTests/Read/GetSingleAlbumResponseResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="34" lean-forward="true" selection-start-line="4" selection-start-column="8" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseQ/AlbumTests/PutAlbumResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseQ/AlbumTests/PutAlbumResponseResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseQ/AlbumTests/CreateAlbumAPITest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="43" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseQ/AlbumTests/CreateAlbumAPITest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseQ/AlbumTests/AlbumAPI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="61" column="62" lean-forward="true" selection-start-line="60" selection-start-column="12" selection-end-line="61" selection-end-column="62" />
+        <state relative-caret-position="236">
+          <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseQ/AlbumTests/UpdateAlbumAPITest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="81" column="32" selection-start-line="81" selection-start-column="32" selection-end-line="81" selection-end-column="32" />
+        <state relative-caret-position="282">
+          <caret line="83" column="9" selection-start-line="83" selection-start-column="9" selection-end-line="83" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseQ/AlbumTests/DeleteAlbumResponseResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-161">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseQ/AlbumTests/DeleteAlbumResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/co/thebeat/ExerciseQ/AlbumTests/DeleteAlbumAPITest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="66" column="19" lean-forward="true" selection-start-line="66" selection-start-column="19" selection-end-line="66" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
