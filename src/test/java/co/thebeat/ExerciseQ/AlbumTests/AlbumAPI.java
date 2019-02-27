@@ -13,4 +13,9 @@ public interface AlbumAPI {
     @GET("public-api/albums/{album_id}")
     Call<GetSingleAlbumResponse> getAlbumById(@Header("Authorization") String authorizationHeader,
                                            @Path("album_id") String albumId);
+
+    @PUT("public-api/albums/{album_id}")
+    Call<PutAlbumResponse> updateAlbum(@Header("Authorization") String authorizationHeader,
+                                       @Body UpdateAlbumRequest updateAlbumRequest,
+                                       @Path("album_id") String albumId);
 }
