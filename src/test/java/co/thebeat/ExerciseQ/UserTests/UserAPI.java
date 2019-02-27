@@ -1,5 +1,6 @@
 package co.thebeat.ExerciseQ.UserTests;
 
+import co.thebeat.ExerciseQ.UserTests.Responses.Create.CreateUserResponse;
 import co.thebeat.ExerciseQ.UserTests.Responses.Read.GetMultiUsersResponse;
 import co.thebeat.ExerciseQ.UserTests.Responses.Read.GetSingleUserResponse;
 import okhttp3.RequestBody;

@@ -1,5 +1,6 @@
 package co.thebeat.ExerciseQ.UserTests;
 
+import co.thebeat.ExerciseQ.UserTests.Responses.Create.CreateUserResponse;
 import co.thebeat.ExerciseQ.UserTests.Responses.Read.GetSingleUserResponse;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -10,6 +11,7 @@ import org.junit.jupiter.api.Test;
 import retrofit2.Call;
 import retrofit2.Response;
 import retrofit2.Retrofit;
+import co.thebeat.ExerciseQ.UserTests.Responses.Create.CreateUserResponse;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 import java.io.IOException;
