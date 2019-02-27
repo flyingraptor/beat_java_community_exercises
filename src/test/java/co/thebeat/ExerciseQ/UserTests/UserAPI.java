@@ -1,5 +1,8 @@
 package co.thebeat.ExerciseQ.UserTests;
 
+import co.thebeat.ExerciseQ.UserTests.Responses.Create.CreateUserResponse;
+import co.thebeat.ExerciseQ.UserTests.Responses.Read.GetMultiUsersResponse;
+import co.thebeat.ExerciseQ.UserTests.Responses.Read.GetSingleUserResponse;
 import okhttp3.RequestBody;
 import retrofit2.Call;
 import retrofit2.http.*;
@@ -13,9 +16,9 @@ public interface UserAPI {
 
     @GET("public-api/users/{user_id}")
     Call<GetSingleUserResponse> getUserById(@Header("Authorization") String authorizationHeader,
-                                     @Path("user_id") String id);
+                                            @Path("user_id") String id);
 
     @GET("public-api/users")
     Call<GetMultiUsersResponse> getUserFilteredByName(@Header("Authorization") String authorizationHeader,
-                                            @Query("name") String name);
+                                                      @Query("name") String name);
 }

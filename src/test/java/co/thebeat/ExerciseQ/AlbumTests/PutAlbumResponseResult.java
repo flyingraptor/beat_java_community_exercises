@@ -1,6 +1,7 @@
 package co.thebeat.ExerciseQ.AlbumTests;
 
-public class GetSingleAlbumResponseResult {
+public class PutAlbumResponseResult {
+
 
     private String id;
 

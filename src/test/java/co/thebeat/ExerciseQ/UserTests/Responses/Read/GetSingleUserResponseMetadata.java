@@ -1,6 +1,6 @@
-package co.thebeat.ExerciseQ.UserTests;
+package co.thebeat.ExerciseQ.UserTests.Responses.Read;
 
-public class CreateUserResponseMetadata {
+public class GetSingleUserResponseMetadata {
 
     private boolean success;
 

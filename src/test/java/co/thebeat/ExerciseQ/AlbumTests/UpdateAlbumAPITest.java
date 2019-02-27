@@ -6,7 +6,7 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import okhttp3.MediaType;
 import okhttp3.RequestBody;
-import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import retrofit2.Call;
 import retrofit2.Response;
@@ -16,20 +16,21 @@ import retrofit2.converter.gson.GsonConverterFactory;
 import java.io.IOException;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class CreateAlbumAPITest {
+public class UpdateAlbumAPITest {
 
-    private static Retrofit retrofitClient;
+    private Retrofit retrofitClient;
 
     private RequestBody requestBody;
 
-    private static AlbumAPI albumAPI;
+    private AlbumAPI albumAPI;
+
+    private String createdAlbumId;
 
     private static final String CREDENTIALS = "Basic QVBRRVV4UkZMVjk5d3RJYnFNU3dnMlZBeVlMR1hQdThqWWdUOg==";
 
-    @BeforeAll
-    public static void before() {
+    @BeforeEach
+    public void before() {
         //Initialize json converter using gson lib
         GsonBuilder gsonBuilder = new GsonBuilder();
         Gson gson = gsonBuilder.create();
@@ -43,33 +44,40 @@ public class CreateAlbumAPITest {
         albumAPI = retrofitClient.create(AlbumAPI.class);
     }
 
+
     @Test
-    public void testCreateAlbum() throws IOException {
+    public void testPutAlbum() throws IOException {
 
         prepareAlbumCreationRequest();
 
         //Execute the request
-        Call<CreateAlbumResponse> albumAPICall = albumAPI.createAlbum(CREDENTIALS,requestBody);
-        Response<CreateAlbumResponse> createAlbumResponse = albumAPICall.execute();
+        Call<CreateAlbumResponse> postAlbumAPICall = albumAPI.createAlbum(CREDENTIALS, requestBody);
+        Response<CreateAlbumResponse> createAlbumResponse = postAlbumAPICall.execute();
+        CreateAlbumResponse createResponseBody = createAlbumResponse.body();
+        createdAlbumId = createResponseBody.getResult().getId();
 
-        //Check the response
-        if(createAlbumResponse.isSuccessful()) {
+
+        prepareAlbumUpdateRequest();
+
+        //Execute the PUT request
+        Call<PutAlbumResponse> upadateAlbumAPICall = albumAPI.updateAlbum(CREDENTIALS, requestBody, createdAlbumId);
+        Response<PutAlbumResponse> putAlbumResponse = upadateAlbumAPICall.execute();
+
+
+        //Check the PUT response
+        if (putAlbumResponse.isSuccessful()) {
             System.out.println("Success!!");
-            CreateAlbumResponse responseBody = createAlbumResponse.body();
-            String createdAlbumId = responseBody.getResult().getId();
-            String returnedTitleFromCreation = responseBody.getResult().getTitle();
+            PutAlbumResponse responseBody = putAlbumResponse.body();
+            String updatedAlbumId = responseBody.getResult().getId();
 
-            //Execute a GET with the received album id from POST
-            Call<GetSingleAlbumResponse> getAlbumAPICall = albumAPI.getAlbumById(CREDENTIALS, createdAlbumId);
+            Call<GetSingleAlbumResponse> getAlbumAPICall = albumAPI.getAlbumById(CREDENTIALS, updatedAlbumId);
             Response<GetSingleAlbumResponse> httpResponse = getAlbumAPICall.execute();
-            GetSingleAlbumResponse getAlbumResponse = httpResponse.body();
+            GetSingleAlbumResponse getPutAlbumResponse = httpResponse.body();
 
-            //Test that the returned object is the same entity created
-            assertEquals(createdAlbumId, getAlbumResponse.getResult().getId());
-            assertEquals(returnedTitleFromCreation, getAlbumResponse.getResult().getTitle());
+            //Test
+            assertEquals(updatedAlbumId, getPutAlbumResponse.getResult().getId());
+            assertEquals("album title2", getPutAlbumResponse.getResult().getTitle());
 
-        } else {
-            assertTrue(false);
         }
 
     }
@@ -79,7 +87,15 @@ public class CreateAlbumAPITest {
         requestBody = RequestBody.create(MediaType.parse("application/json"),
                 "{\"user_id\":\"1224\"," +
                         "\"title\":\"album title\"}");
+
+    }
+
+    private void prepareAlbumUpdateRequest() {
+        //Create the request
+
+        requestBody = RequestBody.create(MediaType.parse("application/json"),
+                "{\"user_id\":\"1224\"," +
+                        "\"title\":\"album title2\"}");
     }
 
 }
-
