@@ -1,6 +1,6 @@
-package co.thebeat.ExerciseQ.UserTests;
+package co.thebeat.ExerciseQ.UserTests.Responses.Create;
 
-public class GetMultiUsersResponseResult {
+public class CreateUserResponseResult {
 
     private String id;
 

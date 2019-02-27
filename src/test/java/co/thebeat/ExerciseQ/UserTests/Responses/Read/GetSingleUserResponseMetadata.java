@@ -1,4 +1,4 @@
-package co.thebeat.ExerciseQ.UserTests;
+package co.thebeat.ExerciseQ.UserTests.Responses.Read;
 
 public class GetSingleUserResponseMetadata {
 

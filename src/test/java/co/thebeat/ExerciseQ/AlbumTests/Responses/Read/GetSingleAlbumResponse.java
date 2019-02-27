@@ -1,8 +1,10 @@
-package co.thebeat.ExerciseQ.AlbumTests;
+package co.thebeat.ExerciseQ.AlbumTests.Responses.Read;
 
+import co.thebeat.ExerciseQ.AlbumTests.Responses.Create.CreateAlbumResponseMetadata;
+import co.thebeat.ExerciseQ.AlbumTests.Responses.Create.CreateAlbumResponseResult;
 import com.google.gson.annotations.SerializedName;
 
-public class CreateAlbumResponse {
+public class GetSingleAlbumResponse {
 
     @SerializedName("_meta")
     private CreateAlbumResponseMetadata metadata;

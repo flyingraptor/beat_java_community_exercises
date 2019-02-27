@@ -1,8 +1,9 @@
 package co.thebeat.ExerciseQ.UserTests;
 
+import co.thebeat.ExerciseQ.UserTests.Responses.Read.GetMultiUsersResponse;
+import co.thebeat.ExerciseQ.UserTests.Responses.Read.GetMultiUsersResponseResult;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import okhttp3.RequestBody;
 import org.apache.commons.lang3.StringUtils;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;

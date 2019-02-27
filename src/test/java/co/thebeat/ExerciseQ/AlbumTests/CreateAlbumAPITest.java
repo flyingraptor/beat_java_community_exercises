@@ -1,5 +1,7 @@
 package co.thebeat.ExerciseQ.AlbumTests;
 
+import co.thebeat.ExerciseQ.AlbumTests.Responses.Read.GetSingleAlbumResponse;
+import co.thebeat.ExerciseQ.AlbumTests.Responses.Create.CreateAlbumResponse;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import okhttp3.MediaType;

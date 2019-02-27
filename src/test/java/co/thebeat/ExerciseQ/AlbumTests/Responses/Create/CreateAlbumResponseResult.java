@@ -1,6 +1,6 @@
-package co.thebeat.ExerciseQ.AlbumTests;
+package co.thebeat.ExerciseQ.AlbumTests.Responses.Create;
 
-public class GetSingleAlbumResponseResult {
+public class CreateAlbumResponseResult {
 
     private String id;
 
