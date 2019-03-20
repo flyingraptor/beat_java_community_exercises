@@ -80,7 +80,7 @@ public class CreateUserAPITest {
     private void prepareUserCreationRequest() {
         //Create the request
         requestBody = RequestBody.create(MediaType.parse("application/json"),
-                "{\"first_name\":\"Electra\",\"last_name\":\"Lele\",\"gender\":\"female\",\"email\":\"user49879.s@test.com\",\"dob\":\"April 9 1979\",\"phone\":\"7428748738\",\"address\":\"Sina 11\",\"website\":\"http://twitter.com\",\"status\":\"active\"}");
+                "{\"first_name\":\"Electra\",\"last_name\":\"Lele\",\"gender\":\"female\",\"email\":\"user59879.s@test.com\",\"dob\":\"April 9 1979\",\"phone\":\"7428748738\",\"address\":\"Sina 11\",\"website\":\"http://twitter.com\",\"status\":\"active\"}");
 
 
     }

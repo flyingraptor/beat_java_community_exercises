@@ -1,8 +1,8 @@
 package co.thebeat.ExerciseQ.UserTests;
 
 
-import co.thebeat.ExerciseQ.UserTests.Read.GetFilteredByNameResponse;
-import co.thebeat.ExerciseQ.UserTests.Read.GetFilteredByNameResponseResult;
+import co.thebeat.ExerciseQ.UserTests.Read.GetMultiUserResponse;
+import co.thebeat.ExerciseQ.UserTests.Read.GetMultiUserResponseResult;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import okhttp3.RequestBody;
@@ -50,15 +50,15 @@ public class GetFilteredByNameTest {
 
 
         //Execute the request
-        Call<GetFilteredByNameResponse> getFilteredByNameAPICall = userAPI.getUserByName(CREDENTIALS, "niko");
-        Response<GetFilteredByNameResponse> returnUsersResponse = getFilteredByNameAPICall.execute();
+        Call<GetMultiUserResponse> getFilteredByNameAPICall = userAPI.getUserByName(CREDENTIALS, "niko");
+        Response<GetMultiUserResponse> returnUsersResponse = getFilteredByNameAPICall.execute();
 
         //Check the response
         if (returnUsersResponse.isSuccessful()) {
             System.out.println("Success!!");
 
-            GetFilteredByNameResponse responseBody = returnUsersResponse.body();
-            ArrayList<GetFilteredByNameResponseResult> result = responseBody.getResult();
+            GetMultiUserResponse responseBody = returnUsersResponse.body();
+            ArrayList<GetMultiUserResponseResult> result = responseBody.getResult();
 
 
             //Test that the returned results are 4

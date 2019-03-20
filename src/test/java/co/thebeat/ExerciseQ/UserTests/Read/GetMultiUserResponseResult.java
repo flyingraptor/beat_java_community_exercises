@@ -1,6 +1,6 @@
 package co.thebeat.ExerciseQ.UserTests.Read;
 
-public class GetFilteredByNameResponseResult {
+public class GetMultiUserResponseResult {
 
 
         private String id;
