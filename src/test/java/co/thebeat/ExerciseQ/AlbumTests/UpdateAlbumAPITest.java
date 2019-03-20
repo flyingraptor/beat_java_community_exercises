@@ -1,5 +1,8 @@
 package co.thebeat.ExerciseQ.AlbumTests;
 
+import co.thebeat.ExerciseQ.AlbumTests.AlbumAPI;
+import co.thebeat.ExerciseQ.AlbumTests.Read.GetSingleAlbumResponse;
+import co.thebeat.ExerciseQ.AlbumTests.Create.CreateAlbumResponse;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import okhttp3.MediaType;
@@ -14,6 +17,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 import java.io.IOException;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class UpdateAlbumAPITest {
 
@@ -55,13 +59,10 @@ public class UpdateAlbumAPITest {
         createdAlbumId = createResponseBody.getResult().getId();
 
 
-        //prepareAlbumUpdateRequest();
-        UpdateAlbumRequest updateAlbumRequest = new UpdateAlbumRequest();
-        updateAlbumRequest.setUserId(1224);
-        updateAlbumRequest.setTitle("album title2");
+        prepareAlbumUpdateRequest();
 
         //Execute the PUT request
-        Call<PutAlbumResponse> upadateAlbumAPICall = albumAPI.updateAlbum(CREDENTIALS, updateAlbumRequest, createdAlbumId);
+        Call<PutAlbumResponse> upadateAlbumAPICall = albumAPI.updateAlbum(CREDENTIALS, requestBody, createdAlbumId);
         Response<PutAlbumResponse> putAlbumResponse = upadateAlbumAPICall.execute();
 
 
@@ -70,6 +71,7 @@ public class UpdateAlbumAPITest {
             System.out.println("Success!!");
             PutAlbumResponse responseBody = putAlbumResponse.body();
             String updatedAlbumId = responseBody.getResult().getId();
+            String returnedTitleFromUpdate = responseBody.getResult().getTitle();
 
             Call<GetSingleAlbumResponse> getAlbumAPICall = albumAPI.getAlbumById(CREDENTIALS, updatedAlbumId);
             Response<GetSingleAlbumResponse> httpResponse = getAlbumAPICall.execute();
@@ -90,4 +92,13 @@ public class UpdateAlbumAPITest {
                         "\"title\":\"album title\"}");
 
     }
+
+    private void prepareAlbumUpdateRequest() {
+        //Create the request
+
+        requestBody = RequestBody.create(MediaType.parse("application/json"),
+                "{\"user_id\":\"1224\"," +
+                        "\"title\":\"album title2\"}");
+    }
+
 }

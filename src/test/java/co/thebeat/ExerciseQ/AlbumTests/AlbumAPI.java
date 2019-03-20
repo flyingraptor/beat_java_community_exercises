@@ -1,5 +1,7 @@
 package co.thebeat.ExerciseQ.AlbumTests;
 
+import co.thebeat.ExerciseQ.AlbumTests.Create.CreateAlbumResponse;
+import co.thebeat.ExerciseQ.AlbumTests.Read.GetSingleAlbumResponse;
 import okhttp3.RequestBody;
 import retrofit2.Call;
 import retrofit2.http.*;
@@ -12,10 +14,10 @@ public interface AlbumAPI {
 
     @GET("public-api/albums/{album_id}")
     Call<GetSingleAlbumResponse> getAlbumById(@Header("Authorization") String authorizationHeader,
-                                           @Path("album_id") String albumId);
+                                              @Path("album_id") String albumId);
 
     @PUT("public-api/albums/{album_id}")
     Call<PutAlbumResponse> updateAlbum(@Header("Authorization") String authorizationHeader,
-                                       @Body UpdateAlbumRequest updateAlbumRequest,
+                                       @Body RequestBody resquestBody,
                                        @Path("album_id") String albumId);
 }

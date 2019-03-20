@@ -1,7 +1,6 @@
-package co.thebeat.ExerciseQ.AlbumTests;
+package co.thebeat.ExerciseQ.AlbumTests.Create;
 
-public class PutAlbumResponseResult {
-
+public class CreateAlbumResponseResult {
 
     private String id;
 
@@ -33,5 +32,3 @@ public class PutAlbumResponseResult {
         this.user_id = user_id;
     }
 }
-
-

@@ -1,10 +1,12 @@
-package co.thebeat.ExerciseQ.UserTests;
+package co.thebeat.ExerciseQ.UserTests.Create;
 
+import co.thebeat.ExerciseQ.UserTests.Read.GetSingleUserResponse;
+import co.thebeat.ExerciseQ.UserTests.UserAPI;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import okhttp3.MediaType;
 import okhttp3.RequestBody;
-import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import retrofit2.Call;
 import retrofit2.Response;
@@ -18,16 +20,16 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class CreateUserAPITest {
 
-    private static Retrofit retrofitClient;
+    private Retrofit retrofitClient;
 
     private RequestBody requestBody;
 
-    private static UserAPI userAPI;
+    private UserAPI userAPI;
 
     private static final String CREDENTIALS = "Basic QVBRRVV4UkZMVjk5d3RJYnFNU3dnMlZBeVlMR1hQdThqWWdUOg==";
 
-    @BeforeAll
-    public static void before() {
+    @BeforeEach
+    public void before() {
         //Initialize json converter using gson lib
         GsonBuilder gsonBuilder = new GsonBuilder();
         Gson gson = gsonBuilder.create();
@@ -47,34 +49,38 @@ public class CreateUserAPITest {
         prepareUserCreationRequest();
 
         //Execute the request
-        Call<CreateUserResponse> userAPICall = userAPI.createUser(CREDENTIALS,requestBody);
-        Response<CreateUserResponse> createUserResponse = userAPICall.execute();
-
-        CreateUserResponse responseBody = createUserResponse.body();
+        Call<CreateUserResponse> createaUserAPICall = userAPI.createUser(CREDENTIALS,requestBody);
+        Response<CreateUserResponse> httpResponse = createaUserAPICall.execute();
 
         //Check the response
-        if(createUserResponse.isSuccessful()) {
+        if(httpResponse.isSuccessful()) {
             System.out.println("Success!!");
+            CreateUserResponse responseBody = httpResponse.body();
+
+
             String createdUserId = responseBody.getResult().getId();
-            String returnedIdFromCreation = responseBody.getResult().getId();
+            String returnedWebsiteFromCreation = responseBody.getResult().getWebsite();
 
-            //Execute a GET with the received user id from POST
             Call<GetSingleUserResponse> getUserAPICall = userAPI.getUserById(CREDENTIALS, createdUserId);
-            Response<GetSingleUserResponse> httpResponse = getUserAPICall.execute();
-            GetSingleUserResponse getUserResponse = httpResponse.body();
+            Response<GetSingleUserResponse> httpGetResponse = getUserAPICall.execute();
+            GetSingleUserResponse getCreateUserResponse = httpGetResponse.body();
 
-            //Test that the returned object is the same entity created
-            assertEquals(createdUserId, getUserResponse.getResult().getId());
-            assertEquals(returnedIdFromCreation, getUserResponse.getResult().getId());
+            //Test
+            assertEquals(createdUserId, getCreateUserResponse.getResult().getId());
+            assertEquals(returnedWebsiteFromCreation, getCreateUserResponse.getResult().getWebsite());
 
         } else {
             assertTrue(false);
+            System.out.println("Failed!!");
         }
 
     }
 
     private void prepareUserCreationRequest() {
         //Create the request
-        requestBody = RequestBody.create(MediaType.parse("application/json"),"{\"first_name\":\"Galatea Georgallis\",\"last_name\":\"Galatea Georgallis\",\"gender\":\"female\",\"dob\":\"16/03/99\",\"email\":\"galateiae92rreeeee000001@gmail.com\",\"phone\":\"8888999900\",\"website\":\"https://www.google.com\",\"address\":\"Manhattanos 19\",\"status\":\"active\"}");
+        requestBody = RequestBody.create(MediaType.parse("application/json"),
+                "{\"first_name\":\"Electra\",\"last_name\":\"Lele\",\"gender\":\"female\",\"email\":\"user49874.s@test.com\",\"dob\":\"April 9 1979\",\"phone\":\"7428748738\",\"address\":\"Sina 11\",\"website\":\"http://twitter.com\",\"status\":\"active\"}");
+
+
     }
 }

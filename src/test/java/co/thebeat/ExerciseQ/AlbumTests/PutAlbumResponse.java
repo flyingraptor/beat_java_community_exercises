@@ -1,5 +1,8 @@
 package co.thebeat.ExerciseQ.AlbumTests;
 
+
+import co.thebeat.ExerciseQ.AlbumTests.PutAlbumresponseMetadata;
+import co.thebeat.ExerciseQ.AlbumTests.PutAlbumResponseResult;
 import com.google.gson.annotations.SerializedName;
 
 public class PutAlbumResponse {
