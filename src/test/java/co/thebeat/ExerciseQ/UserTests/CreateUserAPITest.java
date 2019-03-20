@@ -1,5 +1,8 @@
 package co.thebeat.ExerciseQ.UserTests;
 
+import co.thebeat.ExerciseQ.UserTests.Create.CreateUserResponse;
+import co.thebeat.ExerciseQ.UserTests.Read.GetSingleUserResponse;
+import co.thebeat.ExerciseQ.UserTests.UserAPI;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import okhttp3.MediaType;
@@ -12,6 +15,9 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 import java.io.IOException;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class CreateUserAPITest {
 
@@ -35,6 +41,7 @@ public class CreateUserAPITest {
         retrofitClientBuilder.baseUrl("https://gorest.co.in");
         retrofitClientBuilder.addConverterFactory(gsonConverterFactory);
         retrofitClient = retrofitClientBuilder.build();
+        userAPI = retrofitClient.create(UserAPI.class);
     }
 
     @Test
@@ -43,17 +50,28 @@ public class CreateUserAPITest {
         prepareUserCreationRequest();
 
         //Execute the request
-        Call<CreateUserResponse> userCall = userAPI.createUser(CREDENTIALS,requestBody);
-        Response<CreateUserResponse> createUserResponse = userCall.execute();
+        Call<CreateUserResponse> createaUserAPICall = userAPI.createUser(CREDENTIALS,requestBody);
+        Response<CreateUserResponse> httpResponse = createaUserAPICall.execute();
 
         //Check the response
-        if(createUserResponse.isSuccessful()) {
+        if(httpResponse.isSuccessful()) {
             System.out.println("Success!!");
-            CreateUserResponse responseBody = createUserResponse.body();
-            System.out.println(responseBody.getMetadata().getCode());
-            System.out.println(responseBody.getMetadata().getMessage());
-            System.out.println(responseBody.getMetadata().isSuccess());
+            CreateUserResponse responseBody = httpResponse.body();
+
+
+            String createdUserId = responseBody.getResult().getId();
+            String returnedWebsiteFromCreation = responseBody.getResult().getWebsite();
+
+            Call<GetSingleUserResponse> getUserAPICall = userAPI.getUserById(CREDENTIALS, createdUserId);
+            Response<GetSingleUserResponse> httpGetResponse = getUserAPICall.execute();
+            GetSingleUserResponse getCreateUserResponse = httpGetResponse.body();
+
+            //Test
+            assertEquals(createdUserId, getCreateUserResponse.getResult().getId());
+            assertEquals(returnedWebsiteFromCreation, getCreateUserResponse.getResult().getWebsite());
+
         } else {
+            assertTrue(false);
             System.out.println("Failed!!");
         }
 
@@ -61,11 +79,9 @@ public class CreateUserAPITest {
 
     private void prepareUserCreationRequest() {
         //Create the request
-        userAPI = retrofitClient.create(UserAPI.class);
         requestBody = RequestBody.create(MediaType.parse("application/json"),
-                "{\"first_name\":\"user0\"," +
-                        "\"last_name\":\"user0\"," +
-                        "\"gender\":\"female\"," +
-                        "\"email\":\"user1.s@test.com\"}");
+                "{\"first_name\":\"Electra\",\"last_name\":\"Lele\",\"gender\":\"female\",\"email\":\"user59879.s@test.com\",\"dob\":\"April 9 1979\",\"phone\":\"7428748738\",\"address\":\"Sina 11\",\"website\":\"http://twitter.com\",\"status\":\"active\"}");
+
+
     }
 }
