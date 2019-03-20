@@ -33,3 +33,9 @@ g
 7src/test/java/co/thebeat/ExerciseL/DummyClass1Test.java,f/6/f6a5a86c52551abfff1b84a77d877fd3d14c0c2e
 g
 7src/test/java/co/thebeat/ExerciseI/DummyClass1Test.java,4/0/40191b3b113f1cd4dd56bc606f8b24667fea3a3d
+k
+;src/test/java/co/thebeat/ExerciseQ/AlbumTests/AlbumAPI.java,f/3/f33a207721d2885ba420c5b820f25a5d463ab19d
+i
+9src/test/java/co/thebeat/ExerciseQ/UserTests/UserAPI.java,f/7/f7634d11118390a9c6a4df07a482335208753917
+7
+pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec
