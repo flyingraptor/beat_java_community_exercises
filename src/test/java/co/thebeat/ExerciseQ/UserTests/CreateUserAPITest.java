@@ -1,5 +1,6 @@
-package co.thebeat.ExerciseQ.UserTests.Create;
+package co.thebeat.ExerciseQ.UserTests;
 
+import co.thebeat.ExerciseQ.UserTests.Create.CreateUserResponse;
 import co.thebeat.ExerciseQ.UserTests.Read.GetSingleUserResponse;
 import co.thebeat.ExerciseQ.UserTests.UserAPI;
 import com.google.gson.Gson;
@@ -79,7 +80,7 @@ public class CreateUserAPITest {
     private void prepareUserCreationRequest() {
         //Create the request
         requestBody = RequestBody.create(MediaType.parse("application/json"),
-                "{\"first_name\":\"Electra\",\"last_name\":\"Lele\",\"gender\":\"female\",\"email\":\"user49874.s@test.com\",\"dob\":\"April 9 1979\",\"phone\":\"7428748738\",\"address\":\"Sina 11\",\"website\":\"http://twitter.com\",\"status\":\"active\"}");
+                "{\"first_name\":\"Electra\",\"last_name\":\"Lele\",\"gender\":\"female\",\"email\":\"user49879.s@test.com\",\"dob\":\"April 9 1979\",\"phone\":\"7428748738\",\"address\":\"Sina 11\",\"website\":\"http://twitter.com\",\"status\":\"active\"}");
 
 
     }
