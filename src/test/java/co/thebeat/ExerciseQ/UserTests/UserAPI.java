@@ -20,5 +20,9 @@ public interface UserAPI {
     @GET("public-api/users")
     Call<GetMultiUserResponse> getUserByName(@Header("Authorization") String authorizationHeader,
                                              @Query("name") String userName);
+
+    @GET("public-api/users")
+    Call<GetMultiUserResponse> getAllUsers(@Header("Authorization") String authorizationHeader);
+
 }
 
