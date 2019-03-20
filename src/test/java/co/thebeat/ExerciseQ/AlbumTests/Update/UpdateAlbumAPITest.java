@@ -1,4 +1,4 @@
-package co.thebeat.ExerciseQ.AlbumTests;
+package co.thebeat.ExerciseQ.AlbumTests.Update;
 
 import co.thebeat.ExerciseQ.AlbumTests.AlbumAPI;
 import co.thebeat.ExerciseQ.AlbumTests.Read.GetSingleAlbumResponse;

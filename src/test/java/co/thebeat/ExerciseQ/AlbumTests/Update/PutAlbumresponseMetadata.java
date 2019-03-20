@@ -1,6 +1,7 @@
-package co.thebeat.ExerciseQ.AlbumTests;
+package co.thebeat.ExerciseQ.AlbumTests.Update;
 
-public class GetSingleAlbumResponseMetadata {
+public class PutAlbumresponseMetadata {
+
 
     private boolean success;
 
@@ -32,3 +33,5 @@ public class GetSingleAlbumResponseMetadata {
         this.success = success;
     }
 }
+
+

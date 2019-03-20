@@ -2,6 +2,7 @@ package co.thebeat.ExerciseQ.AlbumTests;
 
 import co.thebeat.ExerciseQ.AlbumTests.Create.CreateAlbumResponse;
 import co.thebeat.ExerciseQ.AlbumTests.Read.GetSingleAlbumResponse;
+import co.thebeat.ExerciseQ.AlbumTests.Update.PutAlbumResponse;
 import okhttp3.RequestBody;
 import retrofit2.Call;
 import retrofit2.http.*;
