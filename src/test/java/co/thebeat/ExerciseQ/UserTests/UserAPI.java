@@ -23,5 +23,9 @@ public interface UserAPI {
 
     @GET("public-api/users")
     Call<GetMultiUserResponse> getAllUsers(@Header("Authorization") String authorizationHeader);
+
+    @GET("public-api/users")
+    Call<GetMultiUserResponse> getUsersByPage(@Header("Authorization") String authorizationHeader,
+                                             @Query("page") short pageNumber);
 }
 
