@@ -1,11 +1,12 @@
 package co.thebeat.ExerciseQ.UserTests;
 
-import co.thebeat.ExerciseQ.UserTests.Responses.Read.GetMultiUsersResponse;
-import co.thebeat.ExerciseQ.UserTests.Responses.Read.GetMultiUsersResponseResult;
+import co.thebeat.ExerciseQ.UserTests.Read.GetMultiUserResponse;
+import co.thebeat.ExerciseQ.UserTests.Read.GetMultiUserResponseResult;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import okhttp3.RequestBody;
 import org.apache.commons.lang3.StringUtils;
-import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import retrofit2.Call;
 import retrofit2.Response;
@@ -14,20 +15,24 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class GetUserFilteredByNameTest {
+public class PhoneNumberStructureTest {
 
-    private static Retrofit retrofitClient;
+    private Retrofit retrofitClient;
 
-    private static UserAPI userAPI;
+    private RequestBody requestBody;
+
+    private UserAPI userAPI;
 
     private static final String CREDENTIALS = "Basic QVBRRVV4UkZMVjk5d3RJYnFNU3dnMlZBeVlMR1hQdThqWWdUOg==";
 
-    @BeforeAll
-    public static void before() {
+    @BeforeEach
+    public void before() {
         //Initialize json converter using gson lib
         GsonBuilder gsonBuilder = new GsonBuilder();
         Gson gson = gsonBuilder.create();
@@ -42,30 +47,34 @@ public class GetUserFilteredByNameTest {
     }
 
     @Test
-    public void testGet4UsersFilteredByName() throws IOException {
+    public void testValidatePhoneNumber() throws IOException {
+
 
         //Execute the request
-        Call<GetMultiUsersResponse> getFilteredUserAPICall = userAPI.getUserFilteredByName(CREDENTIALS,"niko");
-        Response<GetMultiUsersResponse> getMultiUsersResponse = getFilteredUserAPICall.execute();
+        Call<GetMultiUserResponse> getFilteredByNameAPICall = userAPI.getAllUsers(CREDENTIALS);
+        Response<GetMultiUserResponse> returnUsersResponse = getFilteredByNameAPICall.execute();
 
         //Check the response
-        if(getMultiUsersResponse.isSuccessful()) {
+        if (returnUsersResponse.isSuccessful()) {
 
-            GetMultiUsersResponse responseBody = getMultiUsersResponse.body();
-            ArrayList<GetMultiUsersResponseResult> result = responseBody.getResult();
+            GetMultiUserResponse responseBody = returnUsersResponse.body();
+            ArrayList<GetMultiUserResponseResult> result = responseBody.getResult();
 
-            //Test that the returned results are 4
-            assertEquals(4,result.size());
+            String pattern = "^((\\+1\\s\\(\\d{3}\\)\\s)|(\\d{3}-))\\d{3}-\\d{4}$";
 
-            //Check that every result contains name with Niko
-            for(int i=0; i<result.size(); i++) {
+            Pattern r = Pattern.compile(pattern);
 
-                String name = result.get(i).getName();
+            int counter = 0;
 
-                if(!StringUtils.containsIgnoreCase(name,"NiKo")) {
-                    assertTrue(false);
+            for(GetMultiUserResponseResult userRecord : result) {
+
+                Matcher m = r.matcher(userRecord.getPhone());
+                if (!m.find()) {
+                    counter++;
                 }
             }
+
+            assertEquals(0, counter);
 
         } else {
             assertTrue(false);
