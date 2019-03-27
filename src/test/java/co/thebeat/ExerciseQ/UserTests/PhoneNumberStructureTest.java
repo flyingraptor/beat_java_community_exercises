@@ -1,6 +1,5 @@
 package co.thebeat.ExerciseQ.UserTests;
 
-
 import co.thebeat.ExerciseQ.UserTests.Read.GetMultiUserResponse;
 import co.thebeat.ExerciseQ.UserTests.Read.GetMultiUserResponseResult;
 import com.google.gson.Gson;
@@ -16,11 +15,13 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class GetFilteredByNameTest {
+public class PhoneNumberStructureTest {
 
     private Retrofit retrofitClient;
 
@@ -46,42 +47,37 @@ public class GetFilteredByNameTest {
     }
 
     @Test
-    public void testGetFilteredByName() throws IOException {
+    public void testValidatePhoneNumber() throws IOException {
 
 
         //Execute the request
-        Call<GetMultiUserResponse> getFilteredByNameAPICall = userAPI.getUserByName(CREDENTIALS, "niko");
+        Call<GetMultiUserResponse> getFilteredByNameAPICall = userAPI.getAllUsers(CREDENTIALS);
         Response<GetMultiUserResponse> returnUsersResponse = getFilteredByNameAPICall.execute();
 
         //Check the response
         if (returnUsersResponse.isSuccessful()) {
-            System.out.println("Success!!");
 
             GetMultiUserResponse responseBody = returnUsersResponse.body();
             ArrayList<GetMultiUserResponseResult> result = responseBody.getResult();
 
+            String pattern = "^((\\+1\\s\\(\\d{3}\\)\\s)|(\\d{3}-))\\d{3}-\\d{4}$";
 
-            //Test that the returned results are 4
-            assertEquals(4, result.size());
+            Pattern r = Pattern.compile(pattern);
 
+            int counter = 0;
 
-            //Check that every result contains name with niko
-            for (int i = 0; i < result.size(); i++) {
-                String name = result.get(i).getName();
+            for(GetMultiUserResponseResult userRecord : result) {
 
-
-                if (!StringUtils.containsIgnoreCase(name, "NiKo")) {
-                    assertTrue(false);
+                Matcher m = r.matcher(userRecord.getPhone());
+                if (!m.find()) {
+                    counter++;
                 }
             }
+
+            assertEquals(0, counter);
+
         } else {
             assertTrue(false);
         }
     }
 }
-
-
-
-
-
-

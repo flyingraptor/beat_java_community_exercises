@@ -1,6 +1,6 @@
 package co.thebeat.ExerciseQ.UserTests.Read;
 
-public class GetFilteredByNameResponseMetadata {
+public class GetMultiUserResponseMetadata {
 
     private boolean success;
 
