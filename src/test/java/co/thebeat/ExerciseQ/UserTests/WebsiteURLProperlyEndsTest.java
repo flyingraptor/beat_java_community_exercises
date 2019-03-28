@@ -4,8 +4,6 @@ import co.thebeat.ExerciseQ.UserTests.Read.GetMultiUserResponse;
 import co.thebeat.ExerciseQ.UserTests.Read.GetMultiUserResponseResult;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import okhttp3.RequestBody;
-import org.apache.commons.lang3.StringUtils;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import retrofit2.Call;
@@ -21,7 +19,7 @@ import java.util.regex.Pattern;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class PhoneNumberStructureTest {
+public class WebsiteURLProperlyEndsTest {
 
     private Retrofit retrofitClient;
 
@@ -45,40 +43,40 @@ public class PhoneNumberStructureTest {
     }
 
     @Test
-    public void testValidatePhoneNumber() throws IOException {
+    public void testValidatePhoneNumber() throws IOException, InterruptedException {
 
+        for(short page = 1; page<88; page++) {
 
-        //Execute the request
-        Call<GetMultiUserResponse> getFilteredByNameAPICall = userAPI.getAllUsers(CREDENTIALS);
-        Response<GetMultiUserResponse> returnUsersResponse = getFilteredByNameAPICall.execute();
+            Thread.sleep(1000);
+            System.out.println("Current Page: " + page);
+            //Execute the request
+            Call<GetMultiUserResponse> getFilteredByNameAPICall = userAPI.getUsersByPage(CREDENTIALS, page);
+            Response<GetMultiUserResponse> returnUsersResponse = getFilteredByNameAPICall.execute();
 
-        //Check the response
-        if (returnUsersResponse.isSuccessful()) {
+            //Check the response
+            if (returnUsersResponse.isSuccessful()) {
 
-            GetMultiUserResponse responseBody = returnUsersResponse.body();
-            ArrayList<GetMultiUserResponseResult> result = responseBody.getResult();
+                GetMultiUserResponse responseBody = returnUsersResponse.body();
+                ArrayList<GetMultiUserResponseResult> result = responseBody.getResult();
 
-            String pattern = "^((\\+1\\s\\(\\d{3}\\)\\s)|(\\d{3}-))\\d{3}-\\d{4}$";
+                String pattern = "\\.+[aA-zZ]{2,5}$";
 
-            Pattern r = Pattern.compile(pattern);
+                Pattern r = Pattern.compile(pattern);
 
-            int counter = 0;
+                for (int i = 0; i < result.size(); i++) {
 
+                    GetMultiUserResponseResult userRecord = result.get(i);
 
-            for(int i=0; i<result.size(); i++) {
-
-                GetMultiUserResponseResult userRecord = result.get(i);
-
-                Matcher m = r.matcher(userRecord.getPhone());
-                if (!m.find()) {
-                    counter++;
+                    Matcher m = r.matcher(userRecord.getWebsite());
+                    if (!m.find()) {
+                        assertTrue(false);
+                    }
                 }
+
+            } else {
+                assertTrue(false);
             }
-
-            assertEquals(0, counter);
-
-        } else {
-            assertTrue(false);
         }
+
     }
 }
